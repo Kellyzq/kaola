@@ -1,0 +1,2468 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/Gourmet.css"/>
+		<link rel="stylesheet" type="text/css" href="css/head.css"/>
+		<link rel="stylesheet" type="text/css" href="css/footer.css"/>
+		<script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery_utils.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/head.js"></script>
+		<script src="js/Gourmet.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="headerbox"></div>
+		<div class="header">
+			<div class="header_top">
+				<div class="header_main">
+					<div class="header_cookie">
+						<span>您好，</span>
+						<span id="header_username">username@163.com</span>
+						<span class="sep">|</span>
+						<a id="header_logout">退出</a>
+					</div>
+					<div class="header_default">
+						<span>考拉欢迎你！</span>
+						<a href="login.html" class="header_login">登录</a>
+						<span class="sep">|</span>
+						<a href="register.html">免费注册</a>
+					</div>
+					<div class="header_phone">
+						<a href="#" target="_blank" class="header_icon1">手机考拉海购</a>
+					</div>
+					<div class="header_weather">
+						<span id="header_weathercity"></span>&nbsp;&nbsp;
+						<span id="header_weatherstate"></span>&nbsp;&nbsp;
+						<span id="header_weathertemp"></span>
+						<ul class="header_weather_more">
+							<li><span id="header_weather_day"></span></li>
+							<li id="header60"><span id="header_weather_message"></span></li>
+						</ul>
+					</div>
+					<ul class="header_right">
+						<li><a href="#" target="_blank" class="header_icon2">每日签到</a></li>
+						<li><a href="#" target="_blank">我的订单</a></li>
+						<li class="header_drop">
+							<a href="#" target="_blank">个人中心</a>
+							<ul class="header_grzx">
+								<li><a href="#" target="_blank">我的优惠券</a></li>
+								<li><a href="#" target="_blank">我的考拉豆</a></li>
+								<li class="headertop_line"><i></i></li>
+								<li><a href="#" target="_blank">账户安全</a></li>
+								<li><a href="#" target="_blank">我的实名认证</a></li>
+								<li class="headertop_line"><i></i></li>
+								<li><a href="#" target="_blank">我收藏的商品</a></li>
+								<li><a href="#" target="_blank">我关注的品牌</a></li>
+								<li class="headertop_line"><i></i></li>
+								<li><a href="#" target="_blank">售后管理</a></li>
+							</ul>
+						</li>
+						<li class="header_drop">
+							<a href="#" target="_blank">客户服务</a>
+							<ul class="header_khfw">
+								<li class="header_topi1"><a href="#" target="_blank">联系客服</a></li>
+								<li class="header_topi2"><a href="#" target="_blank">帮助中心</a></li>
+							</ul>
+						</li>
+						<li class="header_drop">
+							<a href="#" target="_blank">充值中心</a>
+							<ul class="header_czzx">
+								<li class="header_topi1"><a href="#" target="_blank">话费充值</a></li>
+								<li class="header_topi2"><a href="#" target="_blank">游戏充值</a></li>
+							</ul>
+						</li>
+						<li><a href="#" target="_blank">消费者告知书</a></li>
+						<li class="header_drop">
+							<a href="#" target="_blank" class="headertop_last">更多</a>
+							<ul class="header_topm">
+								<li class="header_topi1"><a href="#" target="_blank">收藏本站</a></li>
+								<li class="headertop_line"><i></i></li>
+								<li class="header_topi1"><a href="#" target="_blank">新浪微博</a></li>
+								<li class="header_topi1"><a href="#" target="_blank">易信公众号</a></li>
+								<li class="header_topi1"><a href="#" target="_blank">微信公众号</a></li>
+								<li class="headertop_line"><i></i></li>
+								<li class="header_topi1"><a href="#" target="_blank">招商合作</a></li>
+								<li class="headertop_line"><i></i></li>
+								<li class="header_topi1"><a href="#" target="_blank">考拉招聘</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="header_mid">
+				<a href="index.html" target="_blank" class="header_logo"></a>
+				<div class="header_searchbox">
+					<div class="header_topsearch">
+						<div class="header_search_wrap">
+							<input type="text" id="search" class="header_search_input" />
+						</div>
+						<input type="button" class="header_search_btn" />
+						<span class="header_search_icon"></span>
+					</div>
+					<ul class="header_search_nav">
+						<li><a href="#" class="red">618欢乐送提前购</a><span class="sep">|</span></li>
+						<li><a href="#" class="red">61顽童节</a><span class="sep">|</span></li>
+						<li><a href="#">游戏充值</a><span class="sep">|</span></li>
+						<li><a href="#">奶粉</a><span class="sep">|</span></li>
+						<li><a href="#">马油</a><span class="sep">|</span></li>
+						<li><a href="#">MK</a><span class="sep">|</span></li>
+						<li><a href="#">麦片</a></li>
+					</ul>
+				</div>
+				<a href="#" class="header_chat">
+					<span class="header_chat_icon"></span>
+					<span class="header_chat_text">购物车</span>
+				</a>
+			</div>
+			<div class="header_nav">
+				<div class="header_nav_main" id="header_allbox">
+					<div class="header_nav_all">
+						<div class="header_nav_level">
+							<div class="header_navall_icon">
+								<i></i>
+								<i></i>
+								<i></i>
+							</div>
+							<span>所有分类</span>
+						</div>
+						<ul class="header_list_ul">
+							<li>
+								<a href="#">
+									<img src="img/headerList_icon1.png" alt="" class="headerlist_icon" />
+									<span class="headerlist_span">母婴儿童</span>
+									<i class="headerlist_arr">＞</i>
+									<span class="headerlist_line"></span>
+								</a>
+							</li>
+							<li>
+								<a href="mz.html" target="_blank">
+									<img src="img/headerList_icon2.png" alt="" class="headerlist_icon" />
+									<span class="headerlist_span">美容彩妆</span>
+									<i class="headerlist_arr">＞</i>
+									<span class="headerlist_line"></span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/headerList_icon3.png" alt="" class="headerlist_icon" />
+									<span class="headerlist_span">服饰鞋包</span>
+									<i class="headerlist_arr">＞</i>
+									<span class="headerlist_line"></span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/headerList_icon4.png" alt="" class="headerlist_icon" />
+									<span class="headerlist_span">家居个护</span>
+									<i class="headerlist_arr">＞</i>
+									<span class="headerlist_line"></span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/headerList_icon5.png" alt="" class="headerlist_icon" />
+									<span class="headerlist_span">营养保健</span>
+									<i class="headerlist_arr">＞</i>
+									<span class="headerlist_line"></span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/headerList_icon6.png" alt="" class="headerlist_icon" />
+									<span class="headerlist_span">海外直邮</span>
+									<i class="headerlist_arr">＞</i>
+									<span class="headerlist_line"></span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/headerList_icon7.png" alt="" class="headerlist_icon" />
+									<span class="headerlist_span">数码家电</span>
+									<i class="headerlist_arr">＞</i>
+									<span class="headerlist_line"></span>
+								</a>
+							</li>
+							<li>
+								<a href="Gourmet.html" target="_blank">
+									<img src="img/headerList_icon8.png" alt="" class="headerlist_icon" />
+									<span class="headerlist_span">环球美食</span>
+									<i class="headerlist_arr">＞</i>
+									<span class="headerlist_line"></span>
+								</a>
+							</li>
+							<li>
+								<a href="sport.html" target="_blank">
+									<img src="img/headerList_icon9.png" alt="" class="headerlist_icon" />
+									<span class="headerlist_span">运动户外</span>
+									<i class="headerlist_arr">＞</i>
+									<span class="headerlist_line"></span>
+								</a>
+							</li>
+							<li>
+								<a href="fresh.html" target="_blank">
+									<img src="img/headerList_icon0.png" alt="" class="headerlist_icon" />
+									<span class="headerlist_span">水果生鲜</span>
+									<i class="headerlist_arr">＞</i>
+									<span class="headerlist_line"></span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<ul class="header_navul clearfix">
+						<li><a href="index.html" target="_blank">首页</a></li>
+						<li><a href="#" target="_blank">今日限时购</a></li>
+						<li><a href="new.html" target="_blank">每日上新</a></li>
+						<li><a href="country.html" target="_blank">国家馆</a></li>
+						<li><a href="world.html" target="_blank">全球旗舰</a></li>
+					</ul>
+					<div id="header_important"></div>
+				</div>
+			</div>
+		</div>
+		<!--看板轮播图---------------------------------------------------------------------------------------------->
+		<div class="carouselfigure">
+			<div class="carouselfigure_mask">
+				<ul>
+					<li><img src="img/Gourmet_banner1.jpg"/></li>
+					<li><img src="img/Gourmet_banner2.jpg"/></li>
+				</ul>
+			</div>
+			<ol class="carouselfigure_point">
+				<li class="carouselfigure_point_on"></li>
+				<li></li>
+			</ol>
+			<div class="prev">
+			</div>
+			<div class="next">
+			</div>
+		</div>
+		<!--分类区---------------------------------------------------------------------------------------------------->
+		<div class="Gourmet_classify banxin">
+			<a href=""></a>
+			<a href=""></a>
+			<a href=""></a>
+			<a href=""></a>
+			<a href=""></a>
+			<a href=""></a>
+			<a href=""></a>
+			<a href=""></a>
+		</div>
+		<!--精选区----------------------------------------------------------------------------------------------------->
+		<div class="Gourmet_life banxin">
+			<h1></h1>
+			<div class="Gourmet_life_con">
+				<a href=""></a>
+				<a href=""></a>
+				<a class="Gourmet_life_con_last" href=""></a>
+			</div>
+		</div>
+		<!--品牌列表---------------------------------------------------------------------------------------------------->
+		<div class="Gourmet_brand banxin">
+			<h1></h1>
+			<ul class="clearfix">
+				<li class="Gourmet_brand_type_active">
+					<span id="">
+						咖啡冲饮
+					</span>
+				</li>
+				<li>
+					<i id="">
+					|
+					</i>
+					<span id="">
+						休闲零食
+					</span>
+				</li>
+				<li>
+					<i id="">
+					|
+					</i>
+					<span id="">
+						乳品酒水
+					</span>
+				</li>
+				<li>
+					<i id="">
+					|
+					</i>
+					<span id="">
+						粮油生鲜
+					</span>
+				</li>
+			</ul>
+			<div class="Gourmet_brand_wrap con_show clearfix">
+				<a href="">
+					<img src="img/Gourmet_coffee1.jpg"/>
+					<p>
+						<img src="img/Gourmet_coffee_brand1.jpg"/>
+						<span class="Gourmet_brand_name">ucc 悠诗诗</span>
+						<span class="Gourmet_brand_introduce">日本精致职人咖啡</span>
+						<b>进入品牌</b>
+					</p>
+				</a>
+				<a href="">
+					<img src="img/Gourmet_coffee2.jpg"/>
+					<p>
+						<img src="img/Gourmet_coffee_brand2.jpg"/>
+						<span class="Gourmet_brand_name">illy 意利</span>
+						<span class="Gourmet_brand_introduce">意大利咖啡之魂</span>
+						<b>进入品牌</b>
+					</p>
+				</a>
+				<a href="">
+					<img src="img/Gourmet_coffee3.jpg"/>
+					<p>
+						<img src="img/Gourmet_coffee_brand3.jpg"/>
+						<span class="Gourmet_brand_name">OWL 猫头鹰</span>
+						<span class="Gourmet_brand_introduce">新加坡热销咖啡</span>
+						<b>进入品牌</b>
+					</p>
+				</a>
+				<a href="">
+					<img src="img/Gourmet_coffee4.jpg"/>
+					<p>
+						<img src="img/Gourmet_coffee_brand4.jpg"/>
+						<span class="Gourmet_brand_name">马玉山</span>
+						<span class="Gourmet_brand_introduce">台湾养生植物冲饮专家</span>
+						<b>进入品牌</b>
+					</p>
+				</a>
+				<a href="">
+					<img src="img/Gourmet_coffee5.jpg"/>
+					<p>
+						<img src="img/Gourmet_coffee_brand5.jpg"/>
+						<span class="Gourmet_brand_name">KEY COFFEE</span>
+						<span class="Gourmet_brand_introduce">日本乐天市场精选咖啡</span>
+						<b>进入品牌</b>
+					</p>
+				</a>
+				<a href="">
+					<img src="img/Gourmet_coffee6.jpg"/>
+					<p>
+						<img src="img/Gourmet_coffee_brand6.jpg"/>
+						<span class="Gourmet_brand_name">Swiss Miss 瑞士小姐</span>
+						<span class="Gourmet_brand_introduce">来自美国的浓醇巧克力</span>
+						<b>进入品牌</b>
+					</p>
+				</a>
+				<a href="">
+					<img src="img/Gourmet_coffee7.jpg"/>
+					<p>
+						<img src="img/Gourmet_coffee_brand7.jpg"/>
+						<span class="Gourmet_brand_name">LAVAZZA 乐维萨</span>
+						<span class="Gourmet_brand_introduce">世界上最古老的意式咖啡</span>
+						<b>进入品牌</b>
+					</p>
+				</a>
+				<a href="">
+					<img src="img/Gourmet_coffee8.jpg"/>
+					<p>
+						<img src="img/Gourmet_coffee_brand8.jpg"/>
+						<span class="Gourmet_brand_name">Hospitality 好客佳</span>
+						<span class="Gourmet_brand_introduce">美国健康麦片品牌</span>
+						<b>进入品牌</b>
+					</p>
+				</a>
+			</div>
+			<div class="Gourmet_brand_wrap con_hide clearfix">
+				<a href="">
+					<img src="img/Gourmet_snack1.jpg"/>
+					<p>
+						<img src="img/Gourmet_snack_brand1.jpg"/>
+						<span class="Gourmet_brand_name">Calbee 卡乐比</span>
+						<span class="Gourmet_brand_introduce">10元起</span>
+						<b>进入品牌</b>
+					</p>
+				</a>
+				<a href="">
+					<img src="img/Gourmet_snack2.jpg"/>
+					<p>
+						<img src="img/Gourmet_snack_brand2.jpg"/>
+						<span class="Gourmet_brand_name">FERRERO ROCHER 费列罗</span>
+						<span class="Gourmet_brand_introduce">超值直降</span>
+						<b>进入品牌</b>
+					</p>
+				</a>
+				<a href="">
+					<img src="img/Gourmet_snack3.jpg"/>
+					<p>
+						<img src="img/Gourmet_snack_brand3.jpg"/>
+						<span class="Gourmet_brand_name">汤姆农场</span>
+						<span class="Gourmet_brand_introduce">低至99元10件</span>
+						<b>进入品牌</b>
+					</p>
+				</a>
+				<a href="">
+					<img src="img/Gourmet_snack4.jpg"/>
+					<p>
+						<img src="img/Gourmet_snack_brand4.jpg"/>
+						<span class="Gourmet_brand_name">JIUR 九日</span>
+						<span class="Gourmet_brand_introduce">低至99元10件</span>
+						<b>进入品牌</b>
+					</p>
+				</a>
+				<a href="">
+					<img src="img/Gourmet_snack5.jpg"/>
+					<p>
+						<img src="img/Gourmet_snack_brand5.jpg"/>
+						<span class="Gourmet_brand_name">emart 易买得</span>
+						<span class="Gourmet_brand_introduce">低至99元10件</span>
+						<b>进入品牌</b>
+					</p>
+				</a>
+				<a href="">
+					<img src="img/Gourmet_snack6.jpg"/>
+					<p>
+						<img src="img/Gourmet_snack_brand6.jpg"/>
+						<span class="Gourmet_brand_name">No Brand</span>
+						<span class="Gourmet_brand_introduce">低至99元10件</span>
+						<b>进入品牌</b>
+					</p>
+				</a>
+				<a href="">
+					<img src="img/Gourmet_snack7.jpg"/>
+					<p>
+						<img src="img/Gourmet_snack_brand7.jpg"/>
+						<span class="Gourmet_brand_name">ORION 好丽友(韩国)</span>
+						<span class="Gourmet_brand_introduce">低至99元8件</span>
+						<b>进入品牌</b>
+					</p>
+				</a>
+				<a href="">
+					<img src="img/Gourmet_snack8.jpg"/>
+					<p>
+						<img src="img/Gourmet_snack_brand8.jpg"/>
+						<span class="Gourmet_brand_name">Knoppers</span>
+						<span class="Gourmet_brand_introduce">低至3.5元/包</span>
+						<b>进入品牌</b>
+					</p>
+				</a>
+			</div>
+			<div class="Gourmet_brand_wrap con_hide clearfix">
+				<a href="">
+					<img src="img/Gourmet_drink1.jpg"/>
+					<p>
+						<img src="img/Gourmet_drink_brand1.jpg"/>
+						<span class="Gourmet_brand_name">DEVONDALE 德运</span>
+						<span class="Gourmet_brand_introduce">澳洲总理称赞的奶粉品牌</span>
+						<b>进入品牌</b>
+					</p>
+				</a>
+				<a href="">
+					<img src="img/Gourmet_drink2.jpg"/>
+					<p>
+						<img src="img/Gourmet_drink_brand2.jpg"/>
+						<span class="Gourmet_brand_name">EasiYo 易极优</span>
+						<span class="Gourmet_brand_introduce">源自新西兰的酸奶粉品牌</span>
+						<b>进入品牌</b>
+					</p>
+				</a>
+				<a href="">
+					<img src="img/Gourmet_drink3.jpg"/>
+					<p>
+						<img src="img/Gourmet_drink_brand3.jpg"/>
+						<span class="Gourmet_brand_name">Anchor 安佳</span>
+						<span class="Gourmet_brand_introduce">新西兰知名乳制品品牌</span>
+						<b>进入品牌</b>
+					</p>
+				</a>
+				<a href="">
+					<img src="img/Gourmet_drink4.jpg"/>
+					<p>
+						<img src="img/Gourmet_drink_brand4.jpg"/>
+						<span class="Gourmet_brand_name">Hennessy 轩尼诗</span>
+						<span class="Gourmet_brand_introduce">法国百年酿酒世家</span>
+						<b>进入品牌</b>
+					</p>
+				</a>
+				<a href="">
+					<img src="img/Gourmet_drink5.jpg"/>
+					<p>
+						<img src="img/Gourmet_drink_brand5.jpg"/>
+						<span class="Gourmet_brand_name">Galatine 佳乐锭</span>
+						<span class="Gourmet_brand_introduce">世界上最古老的奶片</span>
+						<b>进入品牌</b>
+					</p>
+				</a>
+				<a href="">
+					<img src="img/Gourmet_drink6.jpg"/>
+					<p>
+						<img src="img/Gourmet_drink_brand6.jpg"/>
+						<span class="Gourmet_brand_name">Healtheries 贺寿利</span>
+						<span class="Gourmet_brand_introduce">来自新西兰的香浓奶味</span>
+						<b>进入品牌</b>
+					</p>
+				</a>
+				<a href="">
+					<img src="img/Gourmet_drink7.jpg"/>
+					<p>
+						<img src="img/Gourmet_drink_brand7.jpg"/>
+						<span class="Gourmet_brand_name">MOUTAI 茅台</span>
+						<span class="Gourmet_brand_introduce">原厂发货品质保证</span>
+						<b>进入品牌</b>
+					</p>
+				</a>
+				<a href="">
+					<img src="img/Gourmet_drink8.jpg"/>
+					<p>
+						<img src="img/Gourmet_drink_brand8.jpg"/>
+						<span class="Gourmet_brand_name">cowala 咔哇熊</span>
+						<span class="Gourmet_brand_introduce">来自世界黄金奶源地</span>
+						<b>进入品牌</b>
+					</p>
+				</a>
+			</div>
+			<div class="Gourmet_brand_wrap con_hide clearfix">
+				<a href="">
+					<img src="img/Gourmet_grain1.jpg"/>
+					<p>
+						<img src="img/Gourmet_grain_brand1.jpg"/>
+						<span class="Gourmet_brand_name">MARUTAI 丸太</span>
+						<span class="Gourmet_brand_introduce">99选8件</span>
+						<b>进入品牌</b>
+					</p>
+				</a>
+				<a href="">
+					<img src="img/Gourmet_grain2.jpg"/>
+					<p>
+						<img src="img/Gourmet_grain_brand2.jpg"/>
+						<span class="Gourmet_brand_name">乐食麦 LEE’S MUM</span>
+						<span class="Gourmet_brand_introduce">低至188减100</span>
+						<b>进入品牌</b>
+					</p>
+				</a>
+				<a href="">
+					<img src="img/Gourmet_grain3.jpg"/>
+					<p>
+						<img src="img/Gourmet_grain_brand3.jpg"/>
+						<span class="Gourmet_brand_name">BETIS 贝蒂斯</span>
+						<span class="Gourmet_brand_introduce">低至88元/件</span>
+						<b>进入品牌</b>
+					</p>
+				</a>
+				<a href="">
+					<img src="img/Gourmet_grain4.jpg"/>
+					<p>
+						<img src="img/Gourmet_grain_brand4.jpg"/>
+						<span class="Gourmet_brand_name">GALLO 公鸡</span>
+						<span class="Gourmet_brand_introduce">99元任选12件</span>
+						<b>进入品牌</b>
+					</p>
+				</a>
+				<a href="">
+					<img src="img/Gourmet_grain5.jpg"/>
+					<p>
+						<img src="img/Gourmet_grain_brand5.jpg"/>
+						<span class="Gourmet_brand_name">KOKA 可口</span>
+						<span class="Gourmet_brand_introduce">低至3元/件</span>
+						<b>进入品牌</b>
+					</p>
+				</a>
+				<a href="">
+					<img src="img/Gourmet_grain6.jpg"/>
+					<p>
+						<img src="img/Gourmet_grain_brand6.jpg"/>
+						<span class="Gourmet_brand_name">NONGSHIM 农心</span>
+						<span class="Gourmet_brand_introduce">低至16元2包</span>
+						<b>进入品牌</b>
+					</p>
+				</a>
+				<a href="">
+					<img src="img/Gourmet_grain7.jpg"/>
+					<p>
+						<img src="img/Gourmet_grain_brand7.jpg"/>
+						<span class="Gourmet_brand_name">悦牧田</span>
+						<span class="Gourmet_brand_introduce">低至188减100</span>
+						<b>进入品牌</b>
+					</p>
+				</a>
+				<a href="">
+					<img src="img/Gourmet_grain8.jpg"/>
+					<p>
+						<img src="img/Gourmet_grain_brand8.jpg"/>
+						<span class="Gourmet_brand_name">PRESSED PURITY</span>
+						<span class="Gourmet_brand_introduce">第二件半价</span>
+						<b>进入品牌</b>
+					</p>
+				</a>
+			</div>
+		</div>
+		<!--1楼 商品列表------------------------------------------------------------------------------------------->
+		<div class="Gourmet_con banxin">
+			<h1 id="Gourmet_con_title1">1F 乳制品</h1>
+			<div class="Gourmet_con_wrap con_show clearfix">
+				<div class="Gourmet_con_goods">
+					<a href="">
+						<img src="img/it1l480d97_800_800.jpg"/>
+						<em></em><p class="Gourmet_con_union_tags"></p><p class="sport_country_icon">
+							<img src="img/kaola_country8.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="Gourmet_con_goods_title" href="">
+							<strong>2件装</strong> | 【包税】Devondale 德运 澳洲原产 高钙全脂成人牛奶粉 1000克/袋 2袋
+						</a>
+						<a class="Gourmet_con_goods_con" href="">
+							澳洲成年人补钙专用
+						</a>
+						<b>每件64.5元</b>
+						<span id="">
+							¥<i>129</i> <del>¥198</del>
+						</span>
+						<a class="Gourmet_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="Gourmet_con_goods">
+					<a href="">
+						<img src="img/ipp7xa009_800_800.jpg"/>
+						<em></em><p class="Gourmet_con_union_tags"></p><p class="sport_country_icon">
+							<img src="img/kaola_country8.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="Gourmet_con_goods_title" href="">
+							<strong>2件装</strong> | Devondale 德运 高钙脱脂成人牛奶粉 1000克/袋 2袋
+						</a>
+						<a class="Gourmet_con_goods_con" href="">
+							澳洲成年人补钙专用
+						</a>
+						<b>每件54.5元</b>
+						<span id="">
+							¥<i>109</i> <del>¥199</del>
+						</span>
+						<a class="Gourmet_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="Gourmet_con_goods">
+					<a href="">
+						<img src="img/itffzp1a6_800_800.jpg"/>
+						<em></em><p class="Gourmet_con_union_tags"></p><p class="sport_country_icon">
+							<img src="img/kaola_country8.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="Gourmet_con_goods_title" href="">
+							【包税】Devondale 德运 澳洲原产 高钙全脂成人牛奶粉 1000克/袋
+						</a>
+						<a class="Gourmet_con_goods_con" href="">
+							澳洲成年人补钙专用
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>69</i> <del>¥99</del>
+						</span>
+						<a class="Gourmet_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="Gourmet_con_goods">
+					<a href="">
+						<img src="img/itc9m6od89_800_800.jpg"/>
+						<em></em><p class="Gourmet_con_union_tags"></p><p class="sport_country_icon">
+							<img src="img/kaola_country15.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="Gourmet_con_goods_title" href="">
+							Galatine 佳乐锭 意大利原装生产牛乳糖原味乳片 125克/袋
+						</a>
+						<a class="Gourmet_con_goods_con" href="">
+							聚会出游 老少皆宜
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>22</i> <del>¥49</del>
+						</span>
+						<a class="Gourmet_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="Gourmet_con_goods">
+					<a href="">
+						<img src="img/irx54r7716_800_800.jpg"/>
+						<em></em><p class="Gourmet_con_union_tags"></p><p class="sport_country_icon">
+							<img src="img/kaola_country8.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="Gourmet_con_goods_title" href="">
+							<strong>2件装 </strong>| Maxigenes美可卓 全脂高钙奶粉（蓝胖子） 1千克 2罐装
+						</a>
+						<a class="Gourmet_con_goods_con" href="">
+							澳洲本土人气款
+						</a>
+						<b>每件99元</b>
+						<span id="">
+							¥<i>198</i> <del>¥298</del>
+						</span>
+						<a class="Gourmet_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="Gourmet_con_goods">
+					<a href="">
+						<img src="img/itc9itbg85_800_800.jpg"/>
+						<em></em><p class="Gourmet_con_union_tags"></p><p class="sport_country_icon">
+							<img src="img/kaola_country8.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="Gourmet_con_goods_title" href="">
+							Devondale 德运 澳洲原产高钙脱脂成人牛奶粉 1000克/袋
+						</a>
+						<a class="Gourmet_con_goods_con" href="">
+							澳洲成年人补钙专用
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>69.9</i> <del>¥89</del>
+						</span>
+						<a class="Gourmet_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="Gourmet_con_goods">
+					<a href="">
+						<img src="img/ite5kiaj70_800_800.jpg"/>
+						<em></em><p class="Gourmet_con_union_tags"></p><p class="sport_country_icon">
+							<img src="img/kaola_country8.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="Gourmet_con_goods_title" href="">
+							<strong>2件装</strong> | a2 成人全脂奶粉 2袋
+						</a>
+						<a class="Gourmet_con_goods_con" href="">
+							新西兰品质奶粉
+						</a>
+						<b>每件87.5元</b>
+						<span id="">
+							¥<i>175</i> <del>¥199</del>
+						</span>
+						<a class="Gourmet_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="Gourmet_con_goods">
+					<a href="">
+						<img src="img/39514862-3b1c-4280-9633-42117401f90d.jpg"/>
+						<em></em><p class="Gourmet_con_union_tags"></p><p class="sport_country_icon">
+							<img src="img/kaola_country17.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="Gourmet_con_goods_title" href="">
+							达美 蓝莓味 果汁酸奶 90毫升/瓶 4瓶装
+						</a>
+						<a class="Gourmet_con_goods_con" href="">
+							你喝的不仅仅是奶还有果汁
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>17</i> <del>¥100</del>
+						</span>
+						<a class="Gourmet_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<!--2楼 商品列表------------------------------------------------------------------------------------------->
+		<div class="Gourmet_con banxin">
+			<h1 id="Gourmet_con_title2">2F 清凉饮料</h1>
+			<div class="Gourmet_con_wrap con_show clearfix">
+				<div class="Gourmet_con_goods">
+					<a href="">
+						<img src="img/iy4ec1bo66_800_800.jpg"/>
+						<em></em><p class="Gourmet_con_union_tags">满2件<br />减10</p><p class="sport_country_icon">
+							<img src="img/kaola_country3.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="Gourmet_con_goods_title" href="">
+							Perrier 巴黎水 含气天然矿泉水 330毫升 24瓶
+						</a>
+						<a class="Gourmet_con_goods_con" href="">
+							法国原装 纯净享受
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>129</i> <del>¥299</del>
+						</span>
+						<a class="Gourmet_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="Gourmet_con_goods">
+					<a href="">
+						<img src="img/ixtz1fb50_800_800.jpg"/>
+						<em></em><p class="Gourmet_con_union_tags">满2件<br />减10</p><p class="sport_country_icon">
+							<img src="img/kaola_country3.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="Gourmet_con_goods_title" href="">
+							evian 依云 天然矿泉水 500毫升/瓶 24瓶装
+						</a>
+						<a class="Gourmet_con_goods_con" href="">
+							法国人都爱的矿泉水
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>98</i> <del>¥259</del>
+						</span>
+						<a class="Gourmet_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="Gourmet_con_goods">
+					<a href="">
+						<img src="img/ixtywgs464_800_800.jpg"/>
+						<em></em><p class="Gourmet_con_union_tags">满2件<br />减10</p><p class="sport_country_icon">
+							<img src="img/kaola_country3.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="Gourmet_con_goods_title" href="">
+							evian 依云 天然矿泉水 330毫升/瓶 24瓶装
+						</a>
+						<a class="Gourmet_con_goods_con" href="">
+							源自阿尔卑斯
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>78</i> <del>¥199</del>
+						</span>
+						<a class="Gourmet_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="Gourmet_con_goods">
+					<a href="">
+						<img src="img/itcacov372_800_800.jpg"/>
+						<em></em><p class="Gourmet_con_union_tags">满2件<br />减10</p><p class="sport_country_icon">
+							<img src="img/kaola_country3.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="Gourmet_con_goods_title" href="">
+							Perrier 巴黎水 含气青柠味饮料 330毫升 24瓶
+						</a>
+						<a class="Gourmet_con_goods_con" href="">
+							法国原装 纯净享受
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>129</i> <del>¥249</del>
+						</span>
+						<a class="Gourmet_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="Gourmet_con_goods">
+					<a href="">
+						<img src="img/ixu19o5k20_800_800.jpg"/>
+						<em></em><p class="Gourmet_con_union_tags">满2件<br />减10</p><p class="sport_country_icon">
+							<img src="img/kaola_country3.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="Gourmet_con_goods_title" href="">
+							Perrier 巴黎水 含气天然矿泉水 330毫升 24罐
+						</a>
+						<a class="Gourmet_con_goods_con" href="">
+							法国原装 纯净享受
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>98</i> <del>¥299</del>
+						</span>
+						<a class="Gourmet_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="Gourmet_con_goods">
+					<a href="">
+						<img src="img/itcagckw40_800_800.jpg"/>
+						<em></em><p class="Gourmet_con_union_tags">满2件<br />减10</p><p class="sport_country_icon">
+							<img src="img/kaola_country3.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="Gourmet_con_goods_title" href="">
+							Perrier 巴黎水 含气柠檬味饮料 330毫升 24瓶
+						</a>
+						<a class="Gourmet_con_goods_con" href="">
+							法国原装 纯净享受
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>129</i> <del>¥249</del>
+						</span>
+						<a class="Gourmet_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="Gourmet_con_goods">
+					<a href="">
+						<img src="img/0d09aecc-23e8-48d1-ac54-d61c5b4ac48c.jpg"/>
+						<em></em><p class="Gourmet_con_union_tags">61元<br />选8件</p><p class="sport_country_icon">
+							<img src="img/kaola_country1.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="Gourmet_con_goods_title" href="">
+							Hamu 红番石榴汁 红芭乐汁饮料 490毫升/罐
+						</a>
+						<a class="Gourmet_con_goods_con" href="">
+							多口味人选大容量更满足
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>9</i> <del>¥20</del>
+						</span>
+						<a class="Gourmet_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="Gourmet_con_goods">
+					<a href="">
+						<img src="img/it2k5izo87_800_800.jpg"/>
+						<em></em><p class="Gourmet_con_union_tags"></p><p class="sport_country_icon">
+							<img src="img/kaola_country10.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="Gourmet_con_goods_title" href="">
+							<strong>12件装 </strong> | VITACOCO 唯他可可 椰子水饮料 330毫升/盒 12盒装
+						</a>
+						<a class="Gourmet_con_goods_con" href="">
+							天然口感 纯正享受
+						</a>
+						<b>每件9元</b><b>买赠</b>
+						<span id="">
+							¥<i>108</i> <del>¥198</del>
+						</span>
+						<a class="Gourmet_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<!--3楼 商品列表------------------------------------------------------------------------------------------->
+		<div class="Gourmet_con banxin">
+			<h1 id="Gourmet_con_title3">3F 饼干糕点</h1>
+			<div class="Gourmet_con_wrap con_show clearfix">
+				<div class="Gourmet_con_goods">
+					<a href="">
+						<img src="img/dad981cd-d379-4e34-ae5e-1a6188537b7a.jpg"/>
+						<em></em><p class="Gourmet_con_union_tags">61元<br />选8件</p><p class="sport_country_icon">
+							<img src="img/kaola_country18.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="Gourmet_con_goods_title" href="">
+							Richeese 丽芝士 纳宝帝 奶酪 威化饼干 145克/袋
+						</a>
+						<a class="Gourmet_con_goods_con" href="">
+							香浓芝士，吃出生活好味道
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>11.9</i> <del>¥60</del>
+						</span>
+						<a class="Gourmet_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="Gourmet_con_goods">
+					<a href="">
+						<img src="img/9049274b-f930-4a7a-b9cb-31dc7f6f6416.jpg"/>
+						<em></em><p class="Gourmet_con_union_tags">61元<br />选8件</p><p class="sport_country_icon">
+							<img src="img/kaola_country18.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="Gourmet_con_goods_title" href="">
+							Richeese 丽芝士 芝心棒 奶酪味 夹心卷 60克/袋
+						</a>
+						<a class="Gourmet_con_goods_con" href="">
+							丽芝士芝心棒奶酪味夹心卷
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>10.5</i> <del>¥15</del>
+						</span>
+						<a class="Gourmet_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="Gourmet_con_goods">
+					<a href="">
+						<img src="img/3a77f36a-ec5d-40e2-a834-e4ff9fffe7c9.png"/>
+						<em></em><p class="Gourmet_con_union_tags">61元<br />选8件</p><p class="sport_country_icon">
+							<img src="img/kaola_country18.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="Gourmet_con_goods_title" href="">
+							Danisa 皇冠 丹麦曲奇饼干 葡萄干曲奇 90克/盒
+						</a>
+						<a class="Gourmet_con_goods_con" href="">
+							印尼传统配方烘焙出的味道
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>11.9</i> <del>¥21.9</del>
+						</span>
+						<a class="Gourmet_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="Gourmet_con_goods">
+					<a href="">
+						<img src="img/c2ac7209-4a46-44d6-b9d4-f3852a4f9de8.jpg"/>
+						<em></em><p class="Gourmet_con_union_tags"></p><p class="sport_country_icon">
+							<img src="img/kaola_country19.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="Gourmet_con_goods_title" href="">
+							新富町 威化状饼干 榛子味 100克/袋
+						</a>
+						<a class="Gourmet_con_goods_con" href="">
+							来自土豪国家的高逼格饼干
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>14.9</i> <del>¥16</del>
+						</span>
+						<a class="Gourmet_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="Gourmet_con_goods">
+					<a href="">
+						<img src="img/onlineievdn05v10484.jpg"/>
+						<em></em><p class="Gourmet_con_union_tags">满149<br />减50</p><p class="sport_country_icon">
+							<img src="img/kaola_country20.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="Gourmet_con_goods_title" href="">
+							Tipo 丰灵 面包干 鸡蛋牛奶味 300克
+						</a>
+						<a class="Gourmet_con_goods_con" href="">
+							上班族早餐好伴侣
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>13.9</i> <del>¥29.9</del>
+						</span>
+						<a class="Gourmet_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="Gourmet_con_goods">
+					<a href="">
+						<img src="img/7b4d6e6a-8047-47dc-b5c7-4f127af9d130.png"/>
+						<em></em><p class="Gourmet_con_union_tags">61元<br />选8件</p><p class="sport_country_icon">
+							<img src="img/kaola_country18.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="Gourmet_con_goods_title" href="">
+							Danisa 皇冠 丹麦曲奇饼干 巧克力腰果味 90克/盒
+						</a>
+						<a class="Gourmet_con_goods_con" href="">
+							印尼传统配方烘焙出的味道
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>11.9</i> <del>¥21.9</del>
+						</span>
+						<a class="Gourmet_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="Gourmet_con_goods">
+					<a href="">
+						<img src="img/ip6i51ta85_800_800.jpg"/>
+						<em></em><p class="Gourmet_con_union_tags"></p><p class="sport_country_icon">
+							<img src="img/kaola_country9.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="Gourmet_con_goods_title" href="">
+							<strong>3件装</strong> | Knoppers 牛奶榛子巧克力威化饼干 250克 3袋装 共30包
+						</a>
+						<a class="Gourmet_con_goods_con" href="">
+							媲美马卡龙的饼干
+						</a>
+						<b>每件29.7元</b>
+						<span id="">
+							¥<i>89</i> <del>¥199</del>
+						</span>
+						<a class="Gourmet_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="Gourmet_con_goods">
+					<a href="">
+						<img src="img/onlineid11pelu10201.jpg"/>
+						<em></em><p class="Gourmet_con_union_tags">99元<br />选12件</p><p class="sport_country_icon">
+							<img src="img/kaola_country7.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="Gourmet_con_goods_title" href="">
+							JIUR 九日 板栗打糕 120克
+						</a>
+						<a class="Gourmet_con_goods_con" href="">
+							打糕与派的完美结合
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>12</i> <del>¥29.9</del>
+						</span>
+						<a class="Gourmet_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<!--4楼 商品列表------------------------------------------------------------------------------------------->
+		<div class="Gourmet_con banxin">
+			<h1 id="Gourmet_con_title4">4F 咖啡冲饮</h1>
+			<div class="Gourmet_con_wrap con_show clearfix">
+				<div class="Gourmet_con_goods">
+					<a href="">
+						<img src="img/90d6de60-bde5-45d6-9dc1-35af3af70a8e.jpg"/>
+						<em></em><p class="Gourmet_con_union_tags">满499<br />减50</p><p class="sport_country_icon">
+							<img src="img/kaola_country1.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="Gourmet_con_goods_title" href="">
+							艺福堂 薏米红豆粉 湿不再来 五谷杂粮代餐薏仁粉 600/罐
+						</a>
+						<a class="Gourmet_con_goods_con" href="">
+							买就送勺子 早餐只需1分钟
+						</a>
+						<b>包邮</b>
+						<span id="">
+							¥<i>32.9</i> <del>¥86</del>
+						</span>
+						<a class="Gourmet_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="Gourmet_con_goods">
+					<a href="">
+						<img src="img/iwkn0f5i72_800_800.jpg"/>
+						<em></em><p class="Gourmet_con_union_tags"></p><p class="sport_country_icon">
+							<img src="img/kaola_country6.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="Gourmet_con_goods_title" href="">
+							<strong>3件装</strong> | ucc 悠诗诗 职人高级滴漏式挂耳手冲咖啡 18包/袋 3袋
+						</a>
+						<a class="Gourmet_con_goods_con" href="">
+							日本当红职人咖啡
+						</a>
+						<b>每件36.4元</b>
+						<span id="">
+							¥<i>109</i> <del>¥199</del>
+						</span>
+						<a class="Gourmet_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="Gourmet_con_goods">
+					<a href="">
+						<img src="img/iroaibi71_800_800.jpg"/>
+						<em></em><p class="Gourmet_con_union_tags"></p><p class="sport_country_icon">
+							<img src="img/kaola_country7.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="Gourmet_con_goods_title" href="">
+							<strong>2件装</strong> | No Brand 蜂蜜柚子茶 2000 克/罐 2罐
+						</a>
+						<a class="Gourmet_con_goods_con" href="">
+							越喝越美
+						</a>
+						<b>每件64.5元</b>
+						<span id="">
+							¥<i>129</i> <del>¥198</del>
+						</span>
+						<a class="Gourmet_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="Gourmet_con_goods">
+					<a href="">
+						<img src="img/c2ac7209-4a46-44d6-b9d4-f3852a4f9de8.jpg"/>
+						<em></em><p class="Gourmet_con_union_tags"></p><p class="sport_country_icon">
+							<img src="img/kaola_country6.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="Gourmet_con_goods_title" href="">
+							ucc 悠诗诗 117速溶咖啡 90克
+						</a>
+						<a class="Gourmet_con_goods_con" href="">
+							每一口都值得细细品味
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>48</i> <del>¥55</del>
+						</span>
+						<a class="Gourmet_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="Gourmet_con_goods">
+					<a href="">
+						<img src="img/itc9uz0y88_800_800.jpg"/>
+						<em></em><p class="Gourmet_con_union_tags"></p><p class="sport_country_icon">
+							<img src="img/kaola_country6.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="Gourmet_con_goods_title" href="">
+							ucc 悠诗诗 职人高级滴漏式挂耳手冲咖啡原味浓郁 7克*18包
+						</a>
+						<a class="Gourmet_con_goods_con" href="">
+							好喝的咖啡 浓厚香醇
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>49.9</i> <del>¥99.9</del>
+						</span>
+						<a class="Gourmet_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="Gourmet_con_goods">
+					<a href="">
+						<img src="img/onlinei9xrmjjg11248.jpg"/>
+						<em></em><p class="Gourmet_con_union_tags">99元<br />选8件</p><p class="sport_country_icon">
+							<img src="img/kaola_country10.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="Gourmet_con_goods_title" href="">
+							Hospitality 好客佳蜂蜜果仁脆麦圈 即食营养餐 198克
+						</a>
+						<a class="Gourmet_con_goods_con" href="">
+							方便又营养满满的营养餐
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>22</i> <del>¥49</del>
+						</span>
+						<a class="Gourmet_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="Gourmet_con_goods">
+					<a href="">
+						<img src="img/onlinei9xrt5mo11306.jpg"/>
+						<em></em><p class="Gourmet_con_union_tags">99元<br />选8件</p><p class="sport_country_icon">
+							<img src="img/kaola_country10.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="Gourmet_con_goods_title" href="">
+							Hospitality 好客佳碎粒麦片 即食营养餐 198克
+						</a>
+						<a class="Gourmet_con_goods_con" href="">
+							方便又营养满满的营养餐
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>22</i> <del>¥49</del>
+						</span>
+						<a class="Gourmet_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="Gourmet_con_goods">
+					<a href="">
+						<img src="img/onlinei9xrnanv11257.jpg"/>
+						<em></em><p class="Gourmet_con_union_tags">99元<br />选8件</p><p class="sport_country_icon">
+							<img src="img/kaola_country10.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="Gourmet_con_goods_title" href="">
+							Hospitality 好客佳脆脆米可可脆麦片 即食营养餐 198克
+						</a>
+						<a class="Gourmet_con_goods_con" href="">
+							方便又营养满满的营养餐
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>22</i> <del>¥49</del>
+						</span>
+						<a class="Gourmet_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				
+			</div>
+		</div>
+		<!--5楼 商品列表------------------------------------------------------------------------------------------->
+		<div class="Gourmet_con banxin">
+			<h1 id="Gourmet_con_title5">5F 休闲零食</h1>
+			<div class="Gourmet_con_wrap con_show clearfix">
+				<div class="Gourmet_con_goods">
+					<a href="">
+						<img src="img/isztkr5m15_800_800.jpg"/>
+						<em></em><p class="Gourmet_con_union_tags">99元<br />选12件</p><p class="sport_country_icon">
+							<img src="img/kaola_country7.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="Gourmet_con_goods_title" href="">
+							JIUR 九日 蜂蜜黄油薯片 60克
+						</a>
+						<a class="Gourmet_con_goods_con" href="">
+							让韩国明星为之疯狂的薯片
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>16.9</i> <del>¥39.9</del>
+						</span>
+						<a class="Gourmet_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="Gourmet_con_goods">
+					<a href="">
+						<img src="img/onlineid11zn0v10262.jpg"/>
+						<em></em><p class="Gourmet_con_union_tags">99元<br />选12件</p><p class="sport_country_icon">
+							<img src="img/kaola_country7.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="Gourmet_con_goods_title" href="">
+							JIUR 九日 迷你海苔 2克/包 10包装
+						</a>
+						<a class="Gourmet_con_goods_con" href="">
+							香脆美味 唇齿留香
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>13.9</i> <del>¥26.9</del>
+						</span>
+						<a class="Gourmet_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="Gourmet_con_goods">
+					<a href="">
+						<img src="img/onlineifhqxc5y12115.jpg"/>
+						<em></em><p class="Gourmet_con_union_tags">99元<br />选12件</p><p class="sport_country_icon">
+							<img src="img/kaola_country1.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="Gourmet_con_goods_title" href="">
+							张君雅 巧克力甜甜圈 45克
+						</a>
+						<a class="Gourmet_con_goods_con" href="">
+							好吃就是这个味道
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>9.9</i> <del>¥17.9</del>
+						</span>
+						<a class="Gourmet_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="Gourmet_con_goods">
+					<a href="">
+						<img src="img/onlineifhqtlsv12091.jpg"/>
+						<em></em><p class="Gourmet_con_union_tags">满149<br />减50</p><p class="sport_country_icon">
+							<img src="img/kaola_country1.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="Gourmet_con_goods_title" href="">
+							张君雅 日式串烧休闲丸子 80克
+						</a>
+						<a class="Gourmet_con_goods_con" href="">
+							好吃就是这个味道
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>9</i> <del>¥13.9</del>
+						</span>
+						<a class="Gourmet_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="Gourmet_con_goods">
+					<a href="">
+						<img src="img/fb8abc21-960d-4086-95a7-95a18ac999b7.jpg"/>
+						<em></em><p class="Gourmet_con_union_tags">满2985<br />减450</p><p class="sport_country_icon">
+							<img src="img/kaola_country1.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="Gourmet_con_goods_title" href="">
+							网易严选 脆脆虾 20克/16只
+						</a>
+						<a class="Gourmet_con_goods_con" href="">
+							整虾可食，口口香脆
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>18</i> <del>¥18</del>
+						</span>
+						<a class="Gourmet_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="Gourmet_con_goods">
+					<a href="">
+						<img src="img/ijb87l6241_800_800.jpg"/>
+						<em></em><p class="Gourmet_con_union_tags"></p><p class="sport_country_icon">
+							<img src="img/kaola_country7.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="Gourmet_con_goods_title" href="">
+							JIUR 九日 蜂蜜黄油薯片 柑橘味 60克
+						</a>
+						<a class="Gourmet_con_goods_con" href="">
+							让韩国明星为之疯狂的薯片
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>16.8</i> <del>¥39.9</del>
+						</span>
+						<a class="Gourmet_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="Gourmet_con_goods">
+					<a href="">
+						<img src="img/ijazhp1c19_800_800.jpg"/>
+						<em></em><p class="Gourmet_con_union_tags">99元<br />选8件</p><p class="sport_country_icon">
+							<img src="img/kaola_country6.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="Gourmet_con_goods_title" href="">
+							卡乐比 HAITAI 海太 蜂蜜薯条 90克
+						</a>
+						<a class="Gourmet_con_goods_con" href="">
+							浓浓薯味 胜过KFC和麦当劳
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>22.9</i> <del>¥45.9</del>
+						</span>
+						<a class="Gourmet_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="Gourmet_con_goods">
+					<a href="">
+						<img src="img/onlineifhqlqvs12067.jpg"/>
+						<em></em><p class="Gourmet_con_union_tags">满149<br />减50</p><p class="sport_country_icon">
+							<img src="img/kaola_country1.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="Gourmet_con_goods_title" href="">
+							张君雅 五香海苔休闲丸子 80克
+						</a>
+						<a class="Gourmet_con_goods_con" href="">
+							好吃就是这个味道
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>9</i> <del>¥18.8</del>
+						</span>
+						<a class="Gourmet_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<!--6楼 商品列表------------------------------------------------------------------------------------------->
+		<div class="Gourmet_con banxin">
+			<h1 id="Gourmet_con_title6">6F 酒水</h1>
+			<div class="Gourmet_con_wrap con_show clearfix">
+				<div class="Gourmet_con_goods">
+					<a href="">
+						<img src="img/j08xrimn32_800_800.jpg"/>
+						<em></em><p class="Gourmet_con_union_tags"></p><p class="sport_country_icon">
+							<img src="img/kaola_country21.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="Gourmet_con_goods_title" href="">
+							SOLEADO庄园 CALAMUS彩羽干红葡萄酒 750毫升
+						</a>
+						<a class="Gourmet_con_goods_con" href="">
+							西班牙经典酒庄之酿
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>158</i> <del>¥198</del>
+						</span>
+						<a class="Gourmet_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="Gourmet_con_goods">
+					<a href="">
+						<img src="img/4d79e1ae-1bb6-4c5d-b30b-d10c64f404e4.jpg"/>
+						<em></em><p class="Gourmet_con_union_tags"></p><p class="sport_country_icon">
+							<img src="img/kaola_country9.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="Gourmet_con_goods_title" href="">
+							【买一赠一】彼得美德 铂金系列 圣灵堡红葡萄酒 750毫升 德国原瓶
+						</a>
+						<a class="Gourmet_con_goods_con" href="">
+							赠品看展示 单宁适中柔和
+						</a>
+						<b>买赠</b>
+						<span id="">
+							¥<i>66</i> <del>¥128</del>
+						</span>
+						<a class="Gourmet_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="Gourmet_con_goods">
+					<a href="">
+						<img src="img/5b79d85c-8c18-4c8b-b394-2d6cad179a8f.jpg"/>
+						<em></em><p class="Gourmet_con_union_tags"></p><p class="sport_country_icon">
+							<img src="img/kaola_country9.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="Gourmet_con_goods_title" href="">
+							【买一赠一】彼得美德 铂金系列 圣灵堡白葡萄酒 750毫升 德国原瓶进
+						</a>
+						<a class="Gourmet_con_goods_con" href="">
+							赠品看展示 口感轻怡爽
+						</a>
+						<b>买赠</b>
+						<span id="">
+							¥<i>59</i> <del>¥12</del>
+						</span>
+						<a class="Gourmet_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="Gourmet_con_goods">
+					<a href="">
+						<img src="img/f7cf0ea5-3e30-4e44-af5e-10e41b1802c1.jpg"/>
+						<em></em><p class="Gourmet_con_union_tags"></p><p class="sport_country_icon">
+							<img src="img/kaola_country3.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="Gourmet_con_goods_title" href="">
+							LAFITE 拉菲 智利进口红酒 巴斯克花园干红葡萄酒 750毫升/瓶 6瓶装
+						</a>
+						<a class="Gourmet_con_goods_con" href="">
+							原瓶进口，正品保障
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>479</i> <del>¥2998</del>
+						</span>
+						<a class="Gourmet_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="Gourmet_con_goods">
+					<a href="">
+						<img src="img/33f5a1e3-d6e3-438c-b789-4f1befa301e1.jpg"/>
+						<em></em><p class="Gourmet_con_union_tags"></p><p class="sport_country_icon">
+							<img src="img/kaola_country9.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="Gourmet_con_goods_title" href="">
+							彼得美德 铂金系列 圣灵堡 白葡萄酒红葡萄酒 6瓶装 德国原瓶进口
+						</a>
+						<a class="Gourmet_con_goods_con" href="">
+							3白3红组合装
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>188</i> <del>¥768</del>
+						</span>
+						<a class="Gourmet_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="Gourmet_con_goods">
+					<a href="">
+						<img src="img/3da1e5c6-d932-41c5-9c31-3ef22bdeeffa.jpg"/>
+						<em></em><p class="Gourmet_con_union_tags"></p><p class="sport_country_icon">
+							<img src="img/kaola_country15.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="Gourmet_con_goods_title" href="">
+							ENOITA LIA 甜庆盛宴 起泡葡萄酒 750毫升/瓶
+						</a>
+						<a class="Gourmet_con_goods_con" href="">
+							层次丰富、单宁适中
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>49</i> <del>¥158</del>
+						</span>
+						<a class="Gourmet_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="Gourmet_con_goods">
+					<a href="">
+						<img src="img/1bfpfab9890_800_800.jpg"/>
+						<em></em><p class="Gourmet_con_union_tags"></p><p class="sport_country_icon">
+							<img src="img/kaola_country15.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="Gourmet_con_goods_title" href="">
+							FRANCIA CORTA 弗朗齐亚柯达威士忌奶油 配制酒 700毫升/瓶
+						</a>
+						<a class="Gourmet_con_goods_con" href="">
+							当威士忌遇上奶油
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>78</i> <del>¥109</del>
+						</span>
+						<a class="Gourmet_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="Gourmet_con_goods">
+					<a href="">
+						<img src="img/9d13f2ab-c468-482b-aeb2-2143a0bd2f4b.jpg"/>
+						<em></em><p class="Gourmet_con_union_tags"></p><p class="sport_country_icon">
+							<img src="img/kaola_country3.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="Gourmet_con_goods_title" href="">
+							Kronenbourg 克伦堡凯旋1664白啤酒 330毫升/瓶 12瓶
+						</a>
+						<a class="Gourmet_con_goods_con" href="">
+							法国进口 白啤酒 醇厚浓烈
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>145</i> <del>¥215</del>
+						</span>
+						<a class="Gourmet_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<!--7楼 商品列表------------------------------------------------------------------------------------------->
+		<div class="Gourmet_con banxin">
+			<h1 id="Gourmet_con_title7">7F 粮油副食</h1>
+			<div class="Gourmet_con_wrap con_show clearfix">
+				<div class="Gourmet_con_goods">
+					<a href="">
+						<img src="img/iqkhg3fl27_800_800.jpg"/>
+						<em></em><p class="Gourmet_con_union_tags"></p><p class="sport_country_icon">
+							<img src="img/kaola_country6.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="Gourmet_con_goods_title" href="">
+							8件装 | MARUTAI 丸太 九州拉面组合 8件装
+						</a>
+						<a class="Gourmet_con_goods_con" href="">
+							日本九州各地风味拉面
+						</a>
+						<b>每件12.4元</b>
+						<span id="">
+							¥<i>99</i> <del>¥239</del>
+						</span>
+						<a class="Gourmet_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="Gourmet_con_goods">
+					<a href="">
+						<img src="img/onlineie9dqczf12493.jpg"/>
+						<em></em><p class="Gourmet_con_union_tags">99元<br />选8件</p><p class="sport_country_icon">
+							<img src="img/kaola_country6.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="Gourmet_con_goods_title" href="">
+							MARUTAI 丸太 九州熊本黑麻油豚骨浓汤拉面 186克 2人份泡面方便面
+						</a>
+						<a class="Gourmet_con_goods_con" href="">
+							来自日本的美味
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>22</i> <del>¥39.8</del>
+						</span>
+						<a class="Gourmet_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="Gourmet_con_goods">
+					<a href="">
+						<img src="img/onlineie9doyrl12465.jpg"/>
+						<em></em><p class="Gourmet_con_union_tags">99元<br />选8件</p><p class="sport_country_icon">
+							<img src="img/kaola_country6.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="Gourmet_con_goods_title" href="">
+							MARUTAI 丸太 九州鹿儿岛黑豚豚骨浓汤拉面 186克 2人份
+						</a>
+						<a class="Gourmet_con_goods_con" href="">
+							和心爱的他一起享受美味
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>22</i> <del>¥39.8</del>
+						</span>
+						<a class="Gourmet_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="Gourmet_con_goods">
+					<a href="">
+						<img src="img/onlineie9dutu112559.jpg"/>
+						<em></em><p class="Gourmet_con_union_tags">99元<br />选8件</p><p class="sport_country_icon">
+							<img src="img/kaola_country6.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="Gourmet_con_goods_title" href="">
+							MARUTAI 丸太 九州久留米豚骨浓汤拉面 194克 2人份（泡面方便面）
+						</a>
+						<a class="Gourmet_con_goods_con" href="">
+							久留米原味，豚骨拉面的鼻祖
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>22</i> <del>¥39.8</del>
+						</span>
+						<a class="Gourmet_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="Gourmet_con_goods">
+					<a href="">
+						<img src="img/onlineie9dw8pq12594.jpg"/>
+						<em></em><p class="Gourmet_con_union_tags">99元<br />选8件</p><p class="sport_country_icon">
+							<img src="img/kaola_country6.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="Gourmet_con_goods_title" href="">
+							MARUTAI 丸太 九州长崎飞鱼酱油海鲜风味拉面 185克 2人份泡面方便面
+						</a>
+						<a class="Gourmet_con_goods_con" href="">
+							还原度最高的樱花国美食
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>22</i> <del>¥39.8</del>
+						</span>
+						<a class="Gourmet_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="Gourmet_con_goods">
+					<a href="">
+						<img src="img/onlineie9ddoru12288.jpg"/>
+						<em></em><p class="Gourmet_con_union_tags">99元<br />选8件</p><p class="sport_country_icon">
+							<img src="img/kaola_country6.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="Gourmet_con_goods_title" href="">
+							MARUTAI 丸太 九州博多酱油豚骨浓汤拉面 185克 2人份（泡面方便面）
+						</a>
+						<a class="Gourmet_con_goods_con" href="">
+							精选日本九州各地风味拉面
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>22</i> <del>¥39.8</del>
+						</span>
+						<a class="Gourmet_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="Gourmet_con_goods">
+					<a href="">
+						<img src="img/onlineie9dxiv612607.jpg"/>
+						<em></em><p class="Gourmet_con_union_tags">99元<br />选8件</p><p class="sport_country_icon">
+							<img src="img/kaola_country6.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="Gourmet_con_goods_title" href="">
+							MARUTAI 丸太 九州佐贺牛盐汤拉面 185克 2人份（泡面方便面速食面）
+						</a>
+						<a class="Gourmet_con_goods_con" href="">
+							日本专业级别拉面店的味道
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>22</i> <del>¥39.8</del>
+						</span>
+						<a class="Gourmet_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="Gourmet_con_goods">
+					<a href="">
+						<img src="img/onlineie9dt5qy12526.jpg"/>
+						<em></em><p class="Gourmet_con_union_tags">99元<br />选8件</p><p class="sport_country_icon">
+							<img src="img/kaola_country6.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="Gourmet_con_goods_title" href="">
+							MARUTAI 丸太 九州宫崎鸡盐汤拉面 185克 2人份（泡面方便面速食面）
+						</a>
+						<a class="Gourmet_con_goods_con" href="">
+							细滑口感，根根入味
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>22</i> <del>¥39.8</del>
+						</span>
+						<a class="Gourmet_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<!--8楼 商品列表------------------------------------------------------------------------------------------->
+		<div class="Gourmet_con banxin">
+			<h1 id="Gourmet_con_title8">8F 生鲜水果</h1>
+			<div class="Gourmet_con_wrap con_show clearfix">
+				<div class="Gourmet_con_goods">
+					<a href="">
+						<img src="img/f089d116-f68e-4cc8-bcce-3d0abe677c05.jpg"/>
+						<em></em><p class="Gourmet_con_union_tags"></p><p class="sport_country_icon">
+							<img src="img/kaola_country1.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="Gourmet_con_goods_title" href="">
+							世果汇 【送蜂蜜一包】泰国进口百香果30个 新鲜水果 单果约70-90克
+						</a>
+						<a class="Gourmet_con_goods_con" href="">
+							配送蜂蜜 东南亚美味
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>49.9</i> <del>¥99</del>
+						</span>
+						<a class="Gourmet_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="Gourmet_con_goods">
+					<a href="">
+						<img src="img/e97ffa6e-3f98-46cf-bee7-57b8bbfcfb1b.jpg"/>
+						<em></em><p class="Gourmet_con_union_tags"></p><p class="sport_country_icon">
+							<img src="img/kaola_country1.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="Gourmet_con_goods_title" href="">
+							鲜百年 墨西哥进口牛油果 6个装 单果重130-160克
+						</a>
+						<a class="Gourmet_con_goods_con" href="">
+							香味独特，口感细腻
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>69.9</i> <del>¥139</del>
+						</span>
+						<a class="Gourmet_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="Gourmet_con_goods">
+					<a href="">
+						<img src="img/14ae9edc-dcf1-42da-9d4b-49f9f620e36e.png"/>
+						<em></em><p class="Gourmet_con_union_tags"></p><p class="sport_country_icon">
+							<img src="img/kaola_country1.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="Gourmet_con_goods_title" href="">
+							北极光森鲜站 现摘现发 阎良甜瓜5斤装 新鲜香瓜农家水果梨瓜水果
+						</a>
+						<a class="Gourmet_con_goods_con" href="">
+							汁多甘甜 果香味浓
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>28.8</i> <del>¥62</del>
+						</span>
+						<a class="Gourmet_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="Gourmet_con_goods">
+					<a href="">
+						<img src="img/f3b079b2-a38d-4332-962b-46bcdcb1a329.jpg"/>
+						<em></em><p class="Gourmet_con_union_tags"></p><p class="sport_country_icon">
+							<img src="img/kaola_country1.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="Gourmet_con_goods_title" href="">
+							当顿庄园 整肉原切眼肉牛排150克单人份 澳洲进口牛肉
+						</a>
+						<a class="Gourmet_con_goods_con" href="">
+							原切眼肉牛排150克单人份
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>16.7</i> <del>¥59</del>
+						</span>
+						<a class="Gourmet_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="Gourmet_con_goods">
+					<a href="">
+						<img src="img/22d0f8b6-8a6f-4889-8ce5-51736a64fa85.jpg"/>
+						<em></em><p class="Gourmet_con_union_tags">满2件<br />减5元</p><p class="sport_country_icon">
+							<img src="img/kaola_country1.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="Gourmet_con_goods_title" href="">
+							世果汇 【2份减5元】泰国进口百香果28个 西番莲 单果约50-70克
+						</a>
+						<a class="Gourmet_con_goods_con" href="">
+							2份减5元 每份送蜂蜜一包
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>39.9</i> <del>¥79</del>
+						</span>
+						<a class="Gourmet_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="Gourmet_con_goods">
+					<a href="">
+						<img src="img/dc4288cf-eb66-46b3-8df1-92e930fd57b1.jpg"/>
+						<em></em><p class="Gourmet_con_union_tags"></p><p class="sport_country_icon">
+							<img src="img/kaola_country1.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="Gourmet_con_goods_title" href="">
+							世果汇【2份减5元】 泰国进口百香果10个单果约70-90克 西番莲
+						</a>
+						<a class="Gourmet_con_goods_con" href="">
+							2份减5元 配送蜂蜜一包
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>25.8</i> <del>¥59</del>
+						</span>
+						<a class="Gourmet_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="Gourmet_con_goods">
+					<a href="">
+						<img src="img/026f049e-a1c2-42cb-8d26-05f166c97a36.jpg"/>
+						<em></em><p class="Gourmet_con_union_tags"></p><p class="sport_country_icon">
+							<img src="img/kaola_country1.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="Gourmet_con_goods_title" href="">
+							鲜百年 泰国金枕榴莲1个 4-5斤 果肉金黄 口感软糯
+						</a>
+						<a class="Gourmet_con_goods_con" href="">
+							果肉金黄 口感软糯
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>99</i> <del>¥189</del>
+						</span>
+						<a class="Gourmet_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="Gourmet_con_goods">
+					<a href="">
+						<img src="img/6f778cd6-be6f-422d-9e5a-ba1c7e4f76c5.jpg"/>
+						<em></em><p class="Gourmet_con_union_tags"></p><p class="sport_country_icon">
+							<img src="img/kaola_country1.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="Gourmet_con_goods_title" href="">
+							鲜百年 墨西哥巨无霸牛油果 6个装 单果重180-220克
+						</a>
+						<a class="Gourmet_con_goods_con" href="">
+							西餐食材，营养丰富
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>79</i> <del>¥169</del>
+						</span>
+						<a class="Gourmet_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<!--右边栏------------------------------------------------------------------------------------------>
+		<div class="right_side_bar">
+			<a class="shopping_cart" href="shoppingCart.html"><p><i class="shopping_cart_icon"></i><span>购物车</span></p></a>
+			<a href="#Gourmet_con_title1">1F 乳制品</a>
+			<a href="#Gourmet_con_title2">2F 饮料</a>
+			<a href="#Gourmet_con_title3">3F 饼干糕点</a>
+			<a href="#Gourmet_con_title4">4F 咖啡冲饮</a>
+			<a href="#Gourmet_con_title5">5F 休闲零食</a>
+			<a href="#Gourmet_con_title6">6F 酒水</a>
+			<a href="#Gourmet_con_title7">7F 粮油副食</a>
+			<a href="#Gourmet_con_title8">8F 生鲜水果</a>
+			<a class="totop" href="#top">
+				<p class="totop_icon"></p>
+				<span id="">
+					TOP
+				</span>
+			</a>
+		</div>
+		<!--脚部------------------------------------------------------------------------------>
+		<div class="footer">
+			<div class="foot_top clearfix">
+				<div class="foot_content">
+					<div class="btmlist">
+						<ul class="clearfix">
+							<li>
+								<i class="w_icon icon23"></i>
+								<strong class="tit">100%正品</strong>
+								<p class="desc">正品保障 假一赔十</p>
+							</li>
+							<li>
+								<i class="w_icon icon24"></i>
+								<strong class="tit">低价保障</strong>
+								<p class="desc">缩减中间环节 确保低价</p>
+							</li>
+							<li>
+								<i class="w_icon icon25"></i>
+								<strong class="tit">30天无忧退货</strong>
+								<p class="desc">国内退货 售后无忧</p>
+							</li>
+							<li class="last">
+								<i class="w_icon icon26"></i>
+								<strong class="tit">满88包邮</strong>
+								<p class="desc">部分特殊商品除外</p>
+							</li>
+						</ul>
+					</div>
+					<div class="guidelist clearfix">
+						<ul class="clearfix">
+							<li class="first">
+								<a href="###" class="logokaola"></a>
+								<div class="focuson">
+									<span class="label">关注我们</span>
+									<a href="###" class="itm">
+										<i class="w_icon icon27"></i>
+										<span class="m_notice">
+											<img src="img/foot1.jpg" alt="" />
+											<span class="arrow">
+												<span class="arr"></span>
+												<span class="arr1"></span>
+											</span>
+										</span>
+									</a>
+									<a href="###" class="itm">
+										<i class="w_icon icon28"></i>
+										<span class="m_notice">
+											<img src="img/foot2.jpg" alt="" />
+											<span class="arrow">
+												<span class="arr"></span>
+												<span class="arr1"></span>
+											</span>
+										</span>
+									</a>
+									<a href="###" class="itm">
+										<i class="w_icon icon29"></i>
+										<span class="m_notice">
+											<img src="img/foot3.jpg" alt="" />
+											<span class="arrow">
+												<span class="arr"></span>
+												<span class="arr1"></span>
+											</span>
+										</span>
+									</a>
+								</div>
+							</li>
+							<li>
+								<dl>
+									<dt>考拉保障</dt>
+									<dd><a href="###">假一赔十</a></dd>
+									<dd><a href="###">廉正监督</a></dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt>新手指南</dt>
+									<dd><a href="###">购物流程</a></dd>
+									<dd><a href="###">支付方式</a></dd>
+									<dd><a href="###">通关税费</a></dd>
+									<dd><a href="###">常见问题</a></dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt>售后服务</dt>
+									<dd><a href="###">退货政策</a></dd>
+									<dd><a href="###">退货流程</a></dd>
+									<dd><a href="###">退款说明</a></dd>
+									<dd><a href="###">联系客服</a></dd>
+									<dd><a href="###">先行赔付</a></dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt>物流配送</dt>
+									<dd><a href="###">配送方式</a></dd>
+									<dd><a href="###">配送服务</a></dd>
+									<dd><a href="###">运费标准</a></dd>
+									<dd><a href="###">物流跟踪</a></dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt>关于我们</dt>
+									<dd><a href="###">联系我们</a></dd>
+									<dd><a href="###">招商合作</a></dd>
+									<dd><a href="###">销售联盟</a></dd>
+									<dd><a href="###">CEO邮箱</a></dd>
+								</dl>
+							</li>
+							<li class="last">
+								<img src="img/foot4.jpg" alt="" />
+								<span>扫描下载手机版</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="foot_bottom">
+				<a href="###">About NetEase</a>-
+				<a href="###">公司简介</a>-
+				<a href="###">联系方法</a>-
+				<a href="###">友情链接</a>-
+				<a href="###">招聘信息</a>-
+				<a href="###">客户服务</a>-
+				<a href="###">隐私政策</a>-
+				<a href="###">网络营销</a>-
+				<a href="###">网站地图</a>-
+				<a href="###">网易考拉海购</a>
+				<br />
+				<span class="license">网络文化经营许可证：浙网文[2016]0155-055号</span>
+				<span class="license">增值电信业务经营许可证：浙B2-20090185-3</span>
+				<span class="license">出版物经营许可证：新出发浙杭经零字第00136号</span>
+				<span class="license"><a href="###">自营经营者信息</a></span>
+				<br />
+				<a href="###"><img src="img/foot5.png" alt="" /></a>
+				<a href="###"><span style="margin-left: 5px;">浙公网安备 33010002000066号</span></a>
+				<span class="license">网易公司版权所有©1997-2017</span>
+				<div class="tac">
+					<span class="kxwz"><a href="###"><img src="img/foot6.png" alt="" /></a></span>
+					<a href="###" class="shield"><img src="img/foot7.gif" alt="" /></a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

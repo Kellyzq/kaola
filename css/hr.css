@@ -1,0 +1,166 @@
+body{
+	background: #fc2551;
+}
+a{
+	text-decoration: none;
+}
+.bg{
+	position: relative;
+    padding-top: 30%;
+    overflow: hidden;
+}
+.bg img{
+	position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 50%;
+    top: 0;
+    margin-left: -50%;
+}
+.body{
+	
+}
+.main{
+	width: 1200px;
+	min-height: 745px;
+	padding: 3% 5%;
+	background: #FFFFFF;
+	margin: 0 auto 50px;
+}
+.hr_nav{
+	padding-left: 108px;
+	border-bottom: 1px solid #CCCCCC;
+}
+.hr_ul{
+	height: 36px;
+}
+.hr_ul li{
+	float: left;
+	margin-right: 70px;
+	display: list-item;
+	cursor: pointer;
+}
+.hr_ul li a{
+	position: relative;
+    height: 36px;
+    padding: 0 5px 4px 5px;
+    font-size: 22px;
+    color: #666;
+    line-height: 30px;
+}
+.hr_ul li a.act{
+	border-bottom: 4px solid #CCCCCC;
+	color: #080808;
+}
+.hr_ul li a:hover{
+	color: #080808;
+}
+.hr_left{
+	position: relative;
+    float: left;
+    width: 120px;
+}
+.left_tab{
+	margin-top: 40px;
+}
+.left_tab li a{
+	position: relative;
+    float: left;
+    font-size: 26px;
+    color: #333;
+    line-height: 30px;
+    padding: 14px 0;
+    font-weight: bold;
+    cursor: pointer;
+}
+.left_tab li a:hover,.left_tab li a.act{
+	color: #a91a26;
+}
+.cont{
+	width: 100%;
+}
+.content{
+	margin-left: 144px;
+	margin-top: 40px;
+}
+.content_list{
+	width: 1056px;
+	min-height: 510px;
+	display: none;
+	color: #666666;
+}
+.content_list.show{
+	display: block;
+}
+.content_list table{
+	border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    table-layout: fixed;
+    border: 0;
+}
+.content_list th{
+	white-space: nowrap;
+    line-height: 32px;
+    text-align: left;
+    font-weight: bold;
+    color: #333;
+    font-size: 18px;
+    background: #f1f1f1;
+}
+.tb1{
+	padding: 14px 40px;
+    border-right: 0;
+}
+.tb2{
+	width: 40%;
+    padding: 14px 0;
+    border-left: 0;
+    text-align: center;
+}
+.content_list td{
+	line-height: 22px;
+	font-size: 18px;
+}
+.content_list td a{
+	color:#666666;
+}
+.content_list td a:hover{
+	color: #000000;
+}
+.content_list h2{
+	margin-bottom: 14px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    text-indent: -10px;
+}
+.content_list h3{
+	margin-bottom: 40px;
+	font-size: 14px;
+}
+.content_list p{
+	font-size: 16px;
+    line-height: 36px;
+}
+.foot{
+	margin: 50px 0 0;
+    padding: 0 0 20px;
+    color: #fff;
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: center;
+}
+.foot a{
+	color: #FFFFFF;
+}
+.foot i{
+	margin: 0 4px;
+}
+.clearfix:after{
+	content: "";
+    display: block;
+    clear: both;
+    height: 0;
+}
+

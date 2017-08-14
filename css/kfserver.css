@@ -1,0 +1,147 @@
+
+html,body{
+	background: #E8E8E8;
+	font-family: Arial;
+}
+.box{
+	width: 590px;
+	margin: 0 auto;
+	background: #FFFFFF;
+	box-shadow: 0 1px 5px 2px #ccc;
+	position: relative;
+}
+.top{
+	height: 45px;
+	line-height: 45px;
+	background: #d2323d;
+}
+.logo{
+	padding-left: 20px;
+	font-size: 16px;
+	color:#FFFFFF;
+}
+.rt_button{
+	float: right;
+    margin-top: 8px;
+    margin-right: 20px;
+    width: 67px;
+    height: 27px;
+    border: 1px solid #ededed;
+    color: #fff;
+    font-size: 12px;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+}
+.main{
+	height: 430px;
+	border-bottom: 1px solid #CCCCCC;
+	overflow: auto;
+}
+.content{
+	position: relative;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+.content_first{
+	color: #a3afb7;
+	text-align: center;
+    padding: 5px 0;
+    font-size: 12px;
+}
+.cont_box{
+	padding: 10px 0;
+    font-size: 14px;
+    line-height: 20px;
+    clear: both;
+}
+.cont_boximg{
+	float: left;
+    margin-right: 10px;
+    background-color: #fff;
+    display: table-cell;
+    width: 38px;
+    height: 38px;
+    line-height: 35px;
+    border-radius: 50%;;
+    overflow: hidden;
+    text-align: center;
+}
+.cont_boximg img{
+	width: 38px;
+	height: 38px;
+}
+.cont_text{
+	max-width: 60%;
+    min-width: 50px;
+    border-radius: 4px;
+    background-color: #f7f7f7;
+    color: #222;
+    position: relative;
+    float: left;
+    padding: 9px 9px 14px 12px;
+    font-size: 14px;
+    line-height: 1.5;
+    border: 1px solid #e6e6e6;
+}
+.user_img{
+	margin-left: 10px;
+	float: right;
+	background: #D2323D;
+}
+.user_img img{
+	width: 20px;
+	height: 21px;
+	margin-top: 8px;
+}
+.user_text{
+	float: right;
+}
+.input{
+	height: 150px;
+}
+.input_text{
+	width: 570px;
+	height: 75px;
+	margin: 5px 10px;
+	border: 0;
+}
+textarea{
+	resize: none;
+	cursor: text;
+    font-size: 14px;
+    font-family: Arial;
+    word-wrap: break-word;
+    outline: none;
+}
+.subtn{
+	position: absolute;
+    bottom: 31px;
+    right: 10px;
+    padding: 10px 20px;
+    background: #D2323D;
+    border-radius: 3px;
+    font-size: 14px;
+    color: #FFFFFF;
+    opacity: .6;
+    cursor: default;
+}
+.have{
+	opacity: 1;
+	cursor: pointer;
+}
+.footer{
+	height: 26px;
+	background: #f2f5f7;
+	overflow: hidden;
+}
+.footer a{
+	width: 101px;
+	height: 12px;
+	display: block;
+	margin: 7px auto;
+}
+.footer img{
+	width: 101px;
+	height: 12px;
+}

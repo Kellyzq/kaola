@@ -1,0 +1,126 @@
+/*
+ * 页面通用样式
+ */
+
+.banxin{
+	width: 1000px;
+	margin: 0 auto;
+}
+.clearfix:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+/*
+ * 看板
+ */
+
+.banner_wrap{
+	height: 440px;
+	background-color: #B60730;
+}
+.banner_wrap .banner{
+	height: 497px;
+	width: 1000px;
+	position: relative;
+	left: 160px;
+	background: url(../img/app_banner.jpg) no-repeat;
+}
+.banner_wrap .banner img{
+	position: absolute;
+	left: 744px;
+	top: 243px;
+}
+.banner_wrap .banner .iphone_download{
+	display: block;
+	width: 184px;
+	height: 51px;
+	position: absolute;
+	left: 543px;
+	top: 243px;
+	background: url(../img/app_intro.jpg) no-repeat;
+	background-position-y: -1132px;
+}
+.banner_wrap .banner .android_download{
+	display: block;
+	width: 184px;
+	height: 51px;
+	position: absolute;
+	left: 543px;
+	top: 308px;
+	background: url(../img/app_intro.jpg) no-repeat;
+	background-position-y: -1185px;
+}
+/*
+ * 介绍
+ */
+.app_introduce{
+    width: 1090px;
+    margin: 150px auto;
+    overflow: hidden;
+}
+.app_introduce dd{
+	float: left;
+	margin-right: 20px;
+	width: 350px;
+}
+.app_introduce .app_introduce3{
+	margin: 0;
+}
+.app_introduce dd h1{
+	text-align: center;
+    font-size: 32px;
+    height: 48px;
+    line-height: 48px;
+    margin-bottom: 10px;
+}
+.app_introduce dd i{
+	font-size: 18px;
+	width: 18em;
+	display: block;
+	margin: 10px auto 23px;
+}
+.app_introduce .app_introduce1 b{
+	width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    display: block;
+    background: url(../img/app_intro.jpg);
+    background-position-y: -1050px;
+}
+.app_introduce .app_introduce1 p{
+	width: 350px;
+	height: 350px;
+	background: url(../img/app_intro.jpg) no-repeat;
+}
+.app_introduce .app_introduce2 b{
+	width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    display: block;
+    background: url(../img/app_intro.jpg);
+    background-position-y: -1050px;
+   	background-position-x: -160px;
+}
+.app_introduce .app_introduce2 p{
+	width: 350px;
+	height: 350px;
+	background: url(../img/app_intro.jpg) no-repeat;
+	background-position-y: -350px;
+}
+.app_introduce .app_introduce3 b{
+	width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    display: block;
+    background: url(../img/app_intro.jpg);
+    background-position-y: -1050px;
+   	background-position-x: -80px;
+}
+.app_introduce .app_introduce3 p{
+	width: 350px;
+	height: 350px;
+	background: url(../img/app_intro.jpg) no-repeat;
+	background-position-y: -700px;
+}

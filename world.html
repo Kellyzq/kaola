@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>全球旗舰 大牌</title>
+		<meta name="keywords" content="网易考拉海购"/>
+		<meta name="description" content="网易考拉海购-安全、放心的在跨境电子商务网站，官方认证，保证正品。网购进口母婴用品、化妆品、进口食品、电子数码，更多产品正陆续推出。"/>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/world.css"/>
+		<link rel="stylesheet" type="text/css" href="css/footer.css"/>
+		<link rel="stylesheet" type="text/css" href="css/head.css"/>
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/jquery_utils.js"></script>
+		<script src="js/head.js"></script>
+		<script src="js/world.js"></script>
+	</head>
+	<body>
+		<div class="headerbox"></div>
+		<div class="header">
+			<div class="header_top">
+				<div class="header_main">
+					<div class="header_cookie">
+						<span>您好，</span>
+						<span id="header_username">username@163.com</span>
+						<span class="sep">|</span>
+						<a id="header_logout">退出</a>
+					</div>
+					<div class="header_default">
+						<span>考拉欢迎你！</span>
+						<a href="login.html" class="header_login">登录</a>
+						<span class="sep">|</span>
+						<a href="register.html">免费注册</a>
+					</div>
+					<div class="header_phone">
+						<a href="#" target="_blank" class="header_icon1">手机考拉海购</a>
+					</div>
+					<div class="header_weather">
+						<span id="header_weathercity"></span>&nbsp;&nbsp;
+						<span id="header_weatherstate"></span>&nbsp;&nbsp;
+						<span id="header_weathertemp"></span>
+						<ul class="header_weather_more">
+							<li><span id="header_weather_day"></span></li>
+							<li id="header60"><span id="header_weather_message"></span></li>
+						</ul>
+					</div>
+					<ul class="header_right">
+						<li><a href="#" target="_blank" class="header_icon2">每日签到</a></li>
+						<li><a href="#" target="_blank">我的订单</a></li>
+						<li class="header_drop">
+							<a href="#" target="_blank">个人中心</a>
+							<ul class="header_grzx">
+								<li><a href="#" target="_blank">我的优惠券</a></li>
+								<li><a href="#" target="_blank">我的考拉豆</a></li>
+								<li class="headertop_line"><i></i></li>
+								<li><a href="#" target="_blank">账户安全</a></li>
+								<li><a href="#" target="_blank">我的实名认证</a></li>
+								<li class="headertop_line"><i></i></li>
+								<li><a href="#" target="_blank">我收藏的商品</a></li>
+								<li><a href="#" target="_blank">我关注的品牌</a></li>
+								<li class="headertop_line"><i></i></li>
+								<li><a href="#" target="_blank">售后管理</a></li>
+							</ul>
+						</li>
+						<li class="header_drop">
+							<a href="#" target="_blank">客户服务</a>
+							<ul class="header_khfw">
+								<li class="header_topi1"><a href="#" target="_blank">联系客服</a></li>
+								<li class="header_topi2"><a href="#" target="_blank">帮助中心</a></li>
+							</ul>
+						</li>
+						<li class="header_drop">
+							<a href="#" target="_blank">充值中心</a>
+							<ul class="header_czzx">
+								<li class="header_topi1"><a href="#" target="_blank">话费充值</a></li>
+								<li class="header_topi2"><a href="#" target="_blank">游戏充值</a></li>
+							</ul>
+						</li>
+						<li><a href="#" target="_blank">消费者告知书</a></li>
+						<li class="header_drop">
+							<a href="#" target="_blank" class="headertop_last">更多</a>
+							<ul class="header_topm">
+								<li class="header_topi1"><a href="#" target="_blank">收藏本站</a></li>
+								<li class="headertop_line"><i></i></li>
+								<li class="header_topi1"><a href="#" target="_blank">新浪微博</a></li>
+								<li class="header_topi1"><a href="#" target="_blank">易信公众号</a></li>
+								<li class="header_topi1"><a href="#" target="_blank">微信公众号</a></li>
+								<li class="headertop_line"><i></i></li>
+								<li class="header_topi1"><a href="#" target="_blank">招商合作</a></li>
+								<li class="headertop_line"><i></i></li>
+								<li class="header_topi1"><a href="#" target="_blank">考拉招聘</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="header_mid">
+				<a href="index.html" target="_blank" class="header_logo"></a>
+				<div class="header_searchbox">
+					<div class="header_topsearch">
+						<div class="header_search_wrap">
+							<input type="text" id="search" class="header_search_input" />
+						</div>
+						<input type="button" class="header_search_btn" />
+						<span class="header_search_icon"></span>
+					</div>
+					<ul class="header_search_nav">
+						<li><a href="#" class="red">618欢乐送提前购</a><span class="sep">|</span></li>
+						<li><a href="#" class="red">61顽童节</a><span class="sep">|</span></li>
+						<li><a href="#">游戏充值</a><span class="sep">|</span></li>
+						<li><a href="#">奶粉</a><span class="sep">|</span></li>
+						<li><a href="#">马油</a><span class="sep">|</span></li>
+						<li><a href="#">MK</a><span class="sep">|</span></li>
+						<li><a href="#">麦片</a></li>
+					</ul>
+				</div>
+				<a href="#" class="header_chat">
+					<span class="header_chat_icon"></span>
+					<span class="header_chat_text">购物车</span>
+				</a>
+			</div>
+			<div class="header_nav">
+				<div class="header_nav_main" id="header_allbox">
+					<div class="header_nav_all">
+						<div class="header_nav_level">
+							<div class="header_navall_icon">
+								<i></i>
+								<i></i>
+								<i></i>
+							</div>
+							<span>所有分类</span>
+						</div>
+						<ul class="header_list_ul">
+							<li>
+								<a href="#">
+									<img src="img/headerList_icon1.png" alt="" class="headerlist_icon" />
+									<span class="headerlist_span">母婴儿童</span>
+									<i class="headerlist_arr">＞</i>
+									<span class="headerlist_line"></span>
+								</a>
+							</li>
+							<li>
+								<a href="mz.html" target="_blank">
+									<img src="img/headerList_icon2.png" alt="" class="headerlist_icon" />
+									<span class="headerlist_span">美容彩妆</span>
+									<i class="headerlist_arr">＞</i>
+									<span class="headerlist_line"></span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/headerList_icon3.png" alt="" class="headerlist_icon" />
+									<span class="headerlist_span">服饰鞋包</span>
+									<i class="headerlist_arr">＞</i>
+									<span class="headerlist_line"></span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/headerList_icon4.png" alt="" class="headerlist_icon" />
+									<span class="headerlist_span">家居个护</span>
+									<i class="headerlist_arr">＞</i>
+									<span class="headerlist_line"></span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/headerList_icon5.png" alt="" class="headerlist_icon" />
+									<span class="headerlist_span">营养保健</span>
+									<i class="headerlist_arr">＞</i>
+									<span class="headerlist_line"></span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/headerList_icon6.png" alt="" class="headerlist_icon" />
+									<span class="headerlist_span">海外直邮</span>
+									<i class="headerlist_arr">＞</i>
+									<span class="headerlist_line"></span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/headerList_icon7.png" alt="" class="headerlist_icon" />
+									<span class="headerlist_span">数码家电</span>
+									<i class="headerlist_arr">＞</i>
+									<span class="headerlist_line"></span>
+								</a>
+							</li>
+							<li>
+								<a href="Gourmet.html" target="_blank">
+									<img src="img/headerList_icon8.png" alt="" class="headerlist_icon" />
+									<span class="headerlist_span">环球美食</span>
+									<i class="headerlist_arr">＞</i>
+									<span class="headerlist_line"></span>
+								</a>
+							</li>
+							<li>
+								<a href="sport.html" target="_blank">
+									<img src="img/headerList_icon9.png" alt="" class="headerlist_icon" />
+									<span class="headerlist_span">运动户外</span>
+									<i class="headerlist_arr">＞</i>
+									<span class="headerlist_line"></span>
+								</a>
+							</li>
+							<li>
+								<a href="fresh.html" target="_blank">
+									<img src="img/headerList_icon0.png" alt="" class="headerlist_icon" />
+									<span class="headerlist_span">水果生鲜</span>
+									<i class="headerlist_arr">＞</i>
+									<span class="headerlist_line"></span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<ul class="header_navul clearfix">
+						<li><a href="index.html" target="_blank">首页</a></li>
+						<li><a href="#" target="_blank">今日限时购</a></li>
+						<li><a href="new.html" target="_blank">每日上新</a></li>
+						<li><a href="country.html" target="_blank">国家馆</a></li>
+						<li><a href="world.html" target="_blank">全球旗舰</a></li>
+					</ul>
+					<div id="header_important"></div>
+				</div>
+			</div>
+		</div>
+		<div class="content">
+			<div class="imgwrap"><p class="oneimg"></p></div>
+			<div class="imgwrap wrap">
+				<p class="twoimg clearfix">
+					<a href="###"></a>
+					<a href="###"></a>
+					<a href="###"></a>
+					<a href="###"></a>
+					<a href="###"></a>
+					<a href="###"></a>
+					<a href="###"></a>
+					<a href="###"></a>
+					<a href="###"></a>
+					<a href="###"></a>
+					<a href="###"></a>
+					<a href="###"></a>
+				</p>
+			</div>
+			<div class="imgwrap wrap"><p class="thirdimg"></p></div>
+			<div class="tabarea">
+				<div class="tablist clearfix">
+					<a href="###" class="tab first active">综合商超<span></span></a>
+					<a href="###" class="tab">知名品牌<span></span></a>
+					<a href="###" class="tab">新店入驻<span></span></a>
+				</div>
+				<div class="brandWrap">
+					<div class="brand_content">
+						<a href="###" class="imgitem"><img src="img/brand1.jpg"/></a>
+						<a href="###" class="imgitem"><img src="img/brand2.jpg"/></a>
+						<a href="###" class="imgitem"><img src="img/brand3.jpg"/></a>
+						<a href="###" class="imgitem"><img src="img/brand4.jpg"/></a>
+					</div>
+					<div class="brand_content hide">
+						<a href="###" class="imgitem"><img src="img/brand5.jpg"/></a>
+						<a href="###" class="imgitem"><img src="img/brand6.jpg"/></a>
+						<a href="###" class="imgitem"><img src="img/brand7.jpg"/></a>
+						<a href="###" class="imgitem"><img src="img/brand9.jpg"/></a>
+					</div>
+					<div class="brand_content hide">
+						<a href="###" class="imgitem2"><img src="img/brand8.jpg"/></a>
+						<a href="###" class="imgitem2"><img src="img/brand10.jpg"/></a>
+					</div>
+				</div>
+			</div>
+			<div class="imgwrap wrap"><p class="fourimg"></p></div>
+			<div class="korea_content">
+				<div class="goodswrap clearfix">
+					<div class="detailwrap">
+						<a href="###" class="pic">
+							<img src="img/whot1.jpg" alt="" class="proimg"/>
+							<img src="img/tha.png" alt="" class="brand_img"/>
+						</a>
+						<div class="proinf">
+							<p class="tit">
+								<a href="###" class="titlink">Ventry 泰国原装进口天然乳胶枕头 护颈椎 颗粒按摩枕 赠换洗枕套</a>
+								<a href="###">曲线护颈 一觉到天亮</a>
+							</p>
+							<span class="tag">包邮</span>
+							<p class="price"><span class="symbol">￥</span>234</p>
+							<a href="###" class="cart_btn">立即购买</a>
+						</div>
+					</div>
+					<div class="detailwrap">
+						<a href="###" class="pic">
+							<img src="img/whot2.jpg" alt="" class="proimg"/>
+							<img src="img/amaflag.png" alt="" class="brand_img"/>
+						</a>
+						<div class="proinf">
+							<p class="tit">
+								<a href="###" class="titlink">ESTĒE LAUDER 雅诗兰黛 ANR第六代小棕瓶100ml </a>
+								<a href="###">年轻并不是奇迹</a>
+							</p>
+							<span class="tag">包邮</span>
+							<p class="price"><span class="symbol">￥</span>908</p>
+							<a href="###" class="cart_btn">立即购买</a>
+						</div>
+					</div>
+					<div class="detailwrap">
+						<a href="###" class="pic">
+							<img src="img/whot3.jpg" alt="" class="proimg"/>
+							<img src="img/amaflag.png" alt="" class="brand_img"/>
+						</a>
+						<div class="proinf">
+							<p class="tit">
+								<a href="###" class="titlink">CHILDLIFE 钙镁锌成长营养液 2瓶装 6个月-12岁【海外分站】</a>
+								<a href="###">吸收好 口味佳</a>
+							</p>
+							<span class="tag">包邮</span>
+							<p class="price"><span class="symbol">￥</span>364</p>
+							<a href="###" class="cart_btn">立即购买</a>
+						</div>
+					</div>
+					<div class="detailwrap">
+						<a href="###" class="pic">
+							<img src="img/whot4.jpg" alt="" class="proimg"/>
+							<img src="img/amaflag.png" alt="" class="brand_img"/>
+						</a>
+						<div class="proinf">
+							<p class="tit">
+								<a href="###" class="titlink">CHILDLIFE 童年时光 钙镁锌成长营养液 6个月-12岁【海外分站】 </a>
+								<a href="###">酸奶口口味好吸收好</a>
+							</p>
+							<!--<span class="tag">包邮</span>-->
+							<p class="price"><span class="symbol">￥</span>182</p>
+							<a href="###" class="cart_btn">立即购买</a>
+						</div>
+					</div>
+					<div class="detailwrap">
+						<a href="###" class="pic">
+							<img src="img/whot5.jpg" alt="" class="proimg"/>
+							<img src="img/sevden.png" alt="" class="brand_img"/>
+						</a>
+						<div class="proinf">
+							<p class="tit">
+								<a href="###" class="titlink">skeppshult斯肯特 瑞典进口铸铁锅 无涂层无油烟不粘锅 32CM加厚版</a>
+								<a href="###">瑞典进口无油烟铸铁锅</a>
+							</p>
+							<span class="tag">包邮</span>
+							<span class="tag">买赠</span>
+							<p class="price"><span class="symbol">￥</span>999</p>
+							<a href="###" class="cart_btn">立即购买</a>
+						</div>
+					</div>
+					<div class="detailwrap">
+						<a href="###" class="pic">
+							<img src="img/whot6.jpg" alt="" class="proimg"/>
+							<img src="img/franflag.png" alt="" class="brand_img"/>
+						</a>
+						<div class="proinf">
+							<p class="tit">
+								<a href="###" class="titlink">SISLEY 希思黎 全能乳液 125ml </a>
+								<a href="###">一瓶多用 保养经典</a>
+							</p>
+							<!--<span class="tag">包邮</span>-->
+							<p class="price"><span class="symbol">￥</span>899</p>
+							<a href="###" class="cart_btn">立即购买</a>
+						</div>
+					</div>
+					<div class="detailwrap">
+						<a href="###" class="pic">
+							<img src="img/whot7.jpg" alt="" class="proimg"/>
+							<img src="img/amaflag.png" alt="" class="brand_img"/>
+						</a>
+						<div class="proinf">
+							<p class="tit">
+								<a href="###" class="titlink"><b>3包装</b> | 【官方进口】HUGGIES 好奇 铂金装 XL44片/包 纸尿裤/尿不湿 3包装</a>
+								<a href="###">柔软 透气 弹性 吸收</a>
+							</p>
+							<span class="tag">每包112元</span>
+							<p class="price"><span class="symbol">￥</span>336</p>
+							<a href="###" class="cart_btn">立即购买</a>
+						</div>
+					</div>
+					<div class="detailwrap">
+						<a href="###" class="pic">
+							<img src="img/whot8.jpg" alt="" class="proimg"/>
+							<img src="img/china.png" alt="" class="brand_img"/>
+						</a>
+						<div class="proinf">
+							<p class="tit">
+								<a href="###" class="titlink">世果汇 【送蜂蜜一包】泰国进口百香果30个  新鲜水果 单果约70-90克</a>
+								<a href="###">配送蜂蜜 东南亚美味</a>
+							</p>
+							<!--<span class="tag">包邮</span>-->
+							<p class="price"><span class="symbol">￥</span>49.9</p>
+							<a href="###" class="cart_btn">立即购买</a>
+						</div>
+					</div>
+					<div class="detailwrap">
+						<a href="###" class="pic">
+							<img src="img/whot9.jpg" alt="" class="proimg"/>
+							<img src="img/itaflag.png" alt="" class="brand_img"/>
+						</a>
+						<div class="proinf">
+							<p class="tit">
+								<a href="###" class="titlink">Ferrero 费列罗 榛果威化巧克力 48粒 16条 600克</a>
+								<a href="###">48粒装 费列罗经典</a>
+							</p>
+							<!--<span class="tag">包邮</span>-->
+							<p class="price"><span class="symbol">￥</span>119</p>
+							<a href="###" class="cart_btn">立即购买</a>
+						</div>
+					</div>
+					<div class="detailwrap">
+						<a href="###" class="pic">
+							<img src="img/whot10.jpg" alt="" class="proimg"/>
+							<img src="img/amaflag.png" alt="" class="brand_img"/>
+						</a>
+						<div class="proinf">
+							<p class="tit">
+								<a href="###" class="titlink">CHILDLIFE 三驾马车VC+第一防御液+紫锥雏菊三驾儿童【海外分站】</a>
+								<a href="###">安全有效对抗感冒流感</a>
+							</p>
+							<p class="price"><span class="symbol">￥</span>398</p>
+							<a href="###" class="cart_btn">立即购买</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="imgwrap wrap"><p class="fiveimg"></p></div>
+			<div class="korea_content">
+				<div class="goodswrap clearfix">
+					<div class="detailwrap">
+						<a href="###" class="pic">
+							<img src="img/wmz1.jpg" alt="" class="proimg"/>
+							<img src="img/amaflag.png" alt="" class="brand_img"/>
+						</a>
+						<div class="proinf">
+							<p class="tit">
+								<a href="###" class="titlink">ESTĒE LAUDER 雅诗兰黛 ANR第六代小棕瓶100ml </a>
+								<a href="###">年轻并不是奇迹</a>
+							</p>
+							<span class="tag">包邮</span>
+							<p class="price"><span class="symbol">￥</span>908</p>
+							<a href="###" class="cart_btn">立即购买</a>
+						</div>
+					</div>
+					<div class="detailwrap">
+						<a href="###" class="pic">
+							<img src="img/wmz2.jpg" alt="" class="proimg"/>
+							<img src="img/franflag.png" alt="" class="brand_img"/>
+						</a>
+						<div class="proinf">
+							<p class="tit">
+								<a href="###" class="titlink">SISLEY 希思黎 全能乳液 125ml </a>
+								<a href="###">一瓶多用 保养经典</a>
+							</p>
+							<!--<span class="tag">每包86元</span>-->
+							<p class="price"><span class="symbol">￥</span>899</p>
+							<a href="###" class="cart_btn">立即购买</a>
+						</div>
+					</div>
+					<div class="detailwrap">
+						<a href="###" class="pic">
+							<img src="img/wmz3.jpg" alt="" class="proimg"/>
+							<img src="img/amaflag.png" alt="" class="brand_img"/>
+						</a>
+						<div class="proinf">
+							<p class="tit">
+								<a href="###" class="titlink">ElizabethArden 伊丽莎白雅顿 金致胶囊眼部精华液60粒</a>
+								<a href="###">明亮双眸 收紧松弛</a>
+							</p>
+							<span class="tag">包邮</span>
+							<p class="price"><span class="symbol">￥</span>278</p>
+							<a href="###" class="cart_btn">立即购买</a>
+						</div>
+					</div>
+					<div class="detailwrap">
+						<a href="###" class="pic">
+							<img src="img/wmz4.jpg" alt="" class="proimg"/>
+							<img src="img/amaflag.png" alt="" class="brand_img"/>
+						</a>
+						<div class="proinf">
+							<p class="tit">
+								<a href="###" class="titlink">ESTĒE LAUDER 雅诗兰黛 多效智妍面霜 50毫升</a>
+								<a href="###">一键激活年轻总开关</a>
+							</p>
+							<span class="tag">包邮</span>
+							<p class="price"><span class="symbol">￥</span>508</p>
+							<a href="###" class="cart_btn">立即购买</a>
+						</div>
+					</div>
+					<div class="detailwrap">
+						<a href="###" class="pic">
+							<img src="img/wmz5.jpg" alt="" class="proimg"/>
+							<img src="img/amaflag.png" alt="" class="brand_img"/>
+						</a>
+						<div class="proinf">
+							<p class="tit">
+								<a href="###" class="titlink">Kiehl's 科颜氏 牛油果眼霜 28毫升</a>
+								<a href="###">让双眼精致迷人 令肌肤水</a>
+							</p>
+							<span class="tag">包邮</span>
+							<p class="price"><span class="symbol">￥</span>419</p>
+							<a href="###" class="cart_btn">立即购买</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="imgwrap wrap"><p class="siximg"></p></div>
+			<div class="korea_content">
+				<div class="goodswrap clearfix">
+					<div class="detailwrap">
+						<a href="###" class="pic">
+							<img src="img/wmy1.jpg" alt="" class="proimg"/>
+							<img src="img/amaflag.png" alt="" class="brand_img"/>
+						</a>
+						<div class="proinf">
+							<p class="tit">
+								<a href="###" class="titlink">CHILDLIFE 钙镁锌成长营养液 2瓶装 6个月-12岁【海外分站】</a>
+								<a href="###">吸收好 口味佳</a>
+							</p>
+							<!--<span class="tag">每件104元</span>-->
+							<p class="price"><span class="symbol">￥</span>364</p>
+							<a href="###" class="cart_btn">立即购买</a>
+						</div>
+					</div>
+					<div class="detailwrap">
+						<a href="###" class="pic">
+							<img src="img/wmy2.jpg" alt="" class="proimg"/>
+							<img src="img/amaflag.png" alt="" class="brand_img"/>
+						</a>
+						<div class="proinf">
+							<p class="tit">
+								<a href="###" class="titlink">CHILDLIFE 童年时光 钙镁锌成长营养液 6个月-12岁【海外分站】</a>
+								<a href="###">酸奶口口味好吸收好</a>
+							</p>
+							<!--<span class="tag">每包86元</span>-->
+							<p class="price"><span class="symbol">￥</span>182</p>
+							<a href="###" class="cart_btn">立即购买</a>
+						</div>
+					</div>
+					<div class="detailwrap">
+						<a href="###" class="pic">
+							<img src="img/wmy3.jpg" alt="" class="proimg"/>
+							<img src="img/amaflag.png" alt="" class="brand_img"/>
+						</a>
+						<div class="proinf">
+							<p class="tit">
+								<a href="###" class="titlink"><b>3包装</b> | 【官方进口】HUGGIES 好奇 铂金装 XL44片/包 纸尿裤/尿不湿 3包装</a>
+								<a href="###">柔软 透气 弹性 吸收</a>
+							</p>
+							<p class="tag">每包112元</p>
+							<p class="price"><span class="symbol">￥</span>336</p>
+							<a href="###" class="cart_btn">立即购买</a>
+						</div>
+					</div>
+					<div class="detailwrap">
+						<a href="###" class="pic">
+							<img src="img/wmy4.jpg" alt="" class="proimg"/>
+							<img src="img/amaflag.png" alt="" class="brand_img"/>
+						</a>
+						<div class="proinf">
+							<p class="tit">
+								<a href="###" class="titlink"><b>3包装</b> | 【官方进口】HUGGIES 好奇 铂金装L58片/包 纸尿裤/尿不湿 3包装</a>
+								<a href="###">柔软 透气 弹性 吸收</a>
+							</p>
+							<span class="tag">每包103元</span>
+							<p class="price"><span class="symbol">￥</span>309</p>
+							<a href="###" class="cart_btn">立即购买</a>
+						</div>
+					</div>
+					<div class="detailwrap">
+						<a href="###" class="pic">
+							<img src="img/wmy5.jpg" alt="" class="proimg"/>
+							<img src="img/amaflag.png" alt="" class="brand_img"/>
+						</a>
+						<div class="proinf">
+							<p class="tit">
+								<a href="###" class="titlink">CHILDLIFE 三驾马车VC+第一防御液+紫锥雏菊三驾儿童【海外分站】 </a>
+								<a href="###">安全有效对抗感冒流感</a>
+							</p>
+							<!--<span class="tag">每包82元</span>-->
+							<p class="price"><span class="symbol">￥</span>398</p>
+							<a href="###" class="cart_btn">立即购买</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="imgwrap wrap"><p class="sevenimg"></p></div>
+			<div class="korea_content">
+				<div class="goodswrap clearfix">
+					<div class="detailwrap">
+						<a href="###" class="pic">
+							<img src="img/shoe1.jpg" alt="" class="proimg"/>
+							<img src="img/itaflag.png" alt="" class="brand_img"/>
+						</a>
+						<div class="proinf">
+							<p class="tit">
+								<a href="###" class="titlink">TINCOCO 轻压加绒保暖美腿连裤袜适用（适用0度以下 - 10度）</a>
+								<a href="###">意大利内衣和美腿袜品牌</a>
+							</p>
+							<span class="tag">包邮</span>
+							<p class="price"><span class="symbol">￥</span>59.9</p>
+							<a href="###" class="cart_btn">立即购买</a>
+						</div>
+					</div>
+					<div class="detailwrap">
+						<a href="###" class="pic">
+							<img src="img/shoe2.jpg" alt="" class="proimg"/>
+							<img src="img/china.png" alt="" class="brand_img"/>
+						</a>
+						<div class="proinf">
+							<p class="tit">
+								<a href="###" class="titlink">网易严选 20寸 纯PC“铝框”（非全铝）登机箱</a>
+								<a href="###">用一个箱子拉起一个世界</a>
+							</p>
+							<span class="tag">包邮</span>
+							<p class="price"><span class="symbol">￥</span>349</p>
+							<a href="###" class="cart_btn">立即购买</a>
+						</div>
+					</div>
+					<div class="detailwrap">
+						<a href="###" class="pic">
+							<img src="img/shoe3.jpg" alt="" class="proimg"/>
+							<img src="img/jpanflag.png" alt="" class="brand_img"/>
+						</a>
+						<div class="proinf">
+							<p class="tit">
+								<a href="###" class="titlink">FIRSTMIX2017春款黑色脚口开衩弹力裤小脚裤</a>
+								<a href="###">小脚开叉打底裤</a>
+							</p>
+							<span class="tag">包邮</span>
+							<p class="price"><span class="symbol">￥</span>59</p>
+							<a href="###" class="cart_btn">立即购买</a>
+						</div>
+					</div>
+					<div class="detailwrap">
+						<a href="###" class="pic">
+							<img src="img/shoe4.jpg" alt="" class="proimg"/>
+							<img src="img/jpanflag.png" alt="" class="brand_img"/>
+						</a>
+						<div class="proinf">
+							<p class="tit">
+								<a href="###" class="titlink">【厚木春季发热组合】原装进口厚木发热连袜裤春季组合</a>
+								<a href="###">细腻顺滑 防勾丝 高弹力</a>
+							</p>
+							<span class="tag">包邮</span>
+							<p class="price"><span class="symbol">￥</span>249</p>
+							<a href="###" class="cart_btn">立即购买</a>
+						</div>
+					</div>
+					<div class="detailwrap">
+						<a href="###" class="pic">
+							<img src="img/shoe5.jpg" alt="" class="proimg"/>
+							<img src="img/itaflag.png" alt="" class="brand_img"/>
+						</a>
+						<div class="proinf">
+							<p class="tit">
+								<a href="###" class="titlink">L’alpina/阿尔皮纳 棉经典商务男袜子【六双装】 </a>
+								<a href="###">脚的味道，袜子知道</a>
+							</p>
+							<span class="tag">包邮</span>
+							<p class="price"><span class="symbol">￥</span>49</p>
+							<a href="###" class="cart_btn">立即购买</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="imgwrap wrap"><p class="title">——数码家电TOP10——</p></div>
+			<div class="korea_content">
+				<div class="goodswrap clearfix">
+					<div class="detailwrap">
+						<a href="###" class="pic">
+							<img src="img/camea1.jpg" alt="" class="proimg"/>
+							<img src="img/amaflag.png" alt="" class="brand_img"/>
+						</a>
+						<div class="proinf">
+							<p class="tit">
+								<a href="###" class="titlink">PARKER派克 IM纯黑丽雅金夹墨水笔+墨水礼盒 钢笔墨水套装 商务送礼</a>
+								<a href="###">箭形笔夹 不锈钢手握</a>
+							</p>
+							<span class="tag">包邮</span>
+							<p class="price"><span class="symbol">￥</span>248</p>
+							<a href="###" class="cart_btn">立即购买</a>
+						</div>
+					</div>
+					<div class="detailwrap">
+						<a href="###" class="pic">
+							<img src="img/camea2.jpg" alt="" class="proimg"/>
+							<img src="img/jpanflag.png" alt="" class="brand_img"/>
+						</a>
+						<div class="proinf">
+							<p class="tit">
+								<a href="###" class="titlink">Casio/卡西欧 EX-TR750自拍神器美颜高清数码相</a>
+								<a href="###">新品上市 现货</a>
+							</p>
+							<span class="tag">包邮</span>
+							<p class="price"><span class="symbol">￥</span>5699</p>
+							<a href="###" class="cart_btn">立即购买</a>
+						</div>
+					</div>
+					<div class="detailwrap">
+						<a href="###" class="pic">
+							<img src="img/camea3.jpg" alt="" class="proimg"/>
+							<img src="img/amaflag.png" alt="" class="brand_img"/>
+						</a>
+						<div class="proinf">
+							<p class="tit">
+								<a href="###" class="titlink">PARKER派克 IM蓝色白夹墨水笔 男女士练字 书法送礼</a>
+								<a href="###">PARKER派克 IM蓝色白夹墨水笔</a>
+							</p>
+							<span class="tag">包邮</span>
+							<p class="price"><span class="symbol">￥</span>168</p>
+							<a href="###" class="cart_btn">立即购买</a>
+						</div>
+					</div>
+					<div class="detailwrap">
+						<a href="###" class="pic">
+							<img src="img/camea4.jpg" alt="" class="proimg"/>
+							<img src="img/itaflag.png" alt="" class="brand_img"/>
+						</a>
+						<div class="proinf">
+							<p class="tit">
+								<a href="###" class="titlink">DeLonghi 德龙 ESAM2200 进口全自动意式蒸汽式奶泡豆粉两用咖啡机</a>
+								<a href="###">原装进口全自动咖啡机</a>
+							</p>
+							<span class="tag">包邮</span>
+							<p class="price"><span class="symbol">￥</span>4490</p>
+							<a href="###" class="cart_btn">立即购买</a>
+						</div>
+					</div>
+					<div class="detailwrap">
+						<a href="###" class="pic">
+							<img src="img/camea5.jpg" alt="" class="proimg"/>
+							<img src="img/itaflag.png" alt="" class="brand_img"/>
+						</a>
+						<div class="proinf">
+							<p class="tit">
+								<a href="###" class="titlink">【胡歌同款】DeLonghi 德龙 雀巢多趣酷思胶囊咖啡机 EDG466.RM 红色</a>
+								<a href="###">1分钟 拥有胡歌专属咖啡馆</a>
+							</p>
+							<span class="tag">包邮</span>
+							<p class="price"><span class="symbol">￥</span>989</p>
+							<a href="###" class="cart_btn">立即购买</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="deslip">
+				<a href="###" class="topcar"><i style="margin-bottom: 5px;"></i>购物车</a>
+				<div class="mainpart">
+					<a href="###" class="rnav">世界大牌</a>
+					<a href="###" class="rnav">名店推荐</a>
+					<a href="###" class="rnav">热销-全球TOP10</a>
+					<a href="###" class="rnav">美妆个护TOP10</a>
+					<a href="###" class="rnav">母婴生活TOP10</a>
+					<a href="###" class="rnav">服饰鞋包TOP10</a>
+					<a href="###" class="rnav bottom">数码家电TOP10</a>
+				</div>
+				<a href="###" class="bottompart"><i>^</i><b>TOP</b></a>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="foot_top clearfix">
+				<div class="foot_content">
+					<div class="btmlist">
+						<ul class="clearfix">
+							<li>
+								<i class="w_icon icon23"></i>
+								<strong class="tit">100%正品</strong>
+								<p class="desc">正品保障 假一赔十</p>
+							</li>
+							<li>
+								<i class="w_icon icon24"></i>
+								<strong class="tit">低价保障</strong>
+								<p class="desc">缩减中间环节 确保低价</p>
+							</li>
+							<li>
+								<i class="w_icon icon25"></i>
+								<strong class="tit">30天无忧退货</strong>
+								<p class="desc">国内退货 售后无忧</p>
+							</li>
+							<li class="last">
+								<i class="w_icon icon26"></i>
+								<strong class="tit">满88包邮</strong>
+								<p class="desc">部分特殊商品除外</p>
+							</li>
+						</ul>
+					</div>
+					<div class="guidelist clearfix">
+						<ul class="clearfix">
+							<li class="first">
+								<a href="###" class="logokaola"></a>
+								<div class="focuson">
+									<span class="label">关注我们</span>
+									<a href="###" class="itm">
+										<i class="w_icon icon27"></i>
+										<span class="m_notice">
+											<img src="img/foot1.jpg" alt="" />
+											<span class="arrow">
+												<span class="arr"></span>
+												<span class="arr1"></span>
+											</span>
+										</span>
+									</a>
+									<a href="###" class="itm">
+										<i class="w_icon icon28"></i>
+										<span class="m_notice">
+											<img src="img/foot2.jpg" alt="" />
+											<span class="arrow">
+												<span class="arr"></span>
+												<span class="arr1"></span>
+											</span>
+										</span>
+									</a>
+									<a href="###" class="itm">
+										<i class="w_icon icon29"></i>
+										<span class="m_notice">
+											<img src="img/foot3.jpg" alt="" />
+											<span class="arrow">
+												<span class="arr"></span>
+												<span class="arr1"></span>
+											</span>
+										</span>
+									</a>
+								</div>
+							</li>
+							<li>
+								<dl>
+									<dt>考拉保障</dt>
+									<dd><a href="###">假一赔十</a></dd>
+									<dd><a href="###">廉正监督</a></dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt>新手指南</dt>
+									<dd><a href="###">购物流程</a></dd>
+									<dd><a href="###">支付方式</a></dd>
+									<dd><a href="###">通关税费</a></dd>
+									<dd><a href="###">常见问题</a></dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt>售后服务</dt>
+									<dd><a href="###">退货政策</a></dd>
+									<dd><a href="###">退货流程</a></dd>
+									<dd><a href="###">退款说明</a></dd>
+									<dd><a href="###">联系客服</a></dd>
+									<dd><a href="###">先行赔付</a></dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt>物流配送</dt>
+									<dd><a href="###">配送方式</a></dd>
+									<dd><a href="###">配送服务</a></dd>
+									<dd><a href="###">运费标准</a></dd>
+									<dd><a href="###">物流跟踪</a></dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt>关于我们</dt>
+									<dd><a href="###">联系我们</a></dd>
+									<dd><a href="###">招商合作</a></dd>
+									<dd><a href="###">销售联盟</a></dd>
+									<dd><a href="###">CEO邮箱</a></dd>
+								</dl>
+							</li>
+							<li class="last">
+								<img src="img/foot4.jpg" alt="" />
+								<span>扫描下载手机版</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="foot_bottom">
+				<a href="###">About NetEase</a>-
+				<a href="###">公司简介</a>-
+				<a href="###">联系方法</a>-
+				<a href="###">友情链接</a>-
+				<a href="###">招聘信息</a>-
+				<a href="###">客户服务</a>-
+				<a href="###">隐私政策</a>-
+				<a href="###">网络营销</a>-
+				<a href="###">网站地图</a>-
+				<a href="###">网易考拉海购</a>
+				<br />
+				<span class="license">网络文化经营许可证：浙网文[2016]0155-055号</span>
+				<span class="license">增值电信业务经营许可证：浙B2-20090185-3</span>
+				<span class="license">出版物经营许可证：新出发浙杭经零字第00136号</span>
+				<span class="license"><a href="###">自营经营者信息</a></span>
+				<br />
+				<a href="###"><img src="img/foot5.png" alt="" /></a>
+				<a href="###"><span style="margin-left: 5px;">浙公网安备 33010002000066号</span></a>
+				<span class="license">网易公司版权所有©1997-2017</span>
+				<div class="tac">
+					<span class="kxwz"><a href="###"><img src="img/foot6.png" alt="" /></a></span>
+					<a href="###" class="shield"><img src="img/foot7.gif" alt="" /></a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

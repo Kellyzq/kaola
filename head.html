@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/head.css" />
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="js/head.js"></script>
+	</head>
+
+	<body>
+		<div class="headerbox"></div>
+		<div class="header">
+			<div class="header_top">
+				<div class="header_main">
+					<div class="header_cookie">
+						<span>您好，</span>
+						<span id="header_username">username@163.com</span>
+						<span class="sep">|</span>
+						<a id="header_logout">退出</a>
+					</div>
+					<div class="header_default">
+						<span>考拉欢迎你！</span>
+						<a href="login.html" class="header_login">登录</a>
+						<span class="sep">|</span>
+						<a href="register.html">免费注册</a>
+					</div>
+					<div class="header_phone">
+						<a href="#" target="_blank" class="header_icon1">手机考拉海购</a>
+					</div>
+					<div class="header_weather">
+						<span id="header_weathercity"></span>&nbsp;&nbsp;
+						<span id="header_weatherstate"></span>&nbsp;&nbsp;
+						<span id="header_weathertemp"></span>
+						<ul class="header_weather_more">
+							<li><span id="header_weather_day"></span></li>
+							<li id="header60"><span id="header_weather_message"></span></li>
+						</ul>
+					</div>
+					<ul class="header_right">
+						<li><a href="#" target="_blank" class="header_icon2">每日签到</a></li>
+						<li><a href="#" target="_blank">我的订单</a></li>
+						<li class="header_drop">
+							<a href="#" target="_blank">个人中心</a>
+							<ul class="header_grzx">
+								<li><a href="#" target="_blank">我的优惠券</a></li>
+								<li><a href="#" target="_blank">我的考拉豆</a></li>
+								<li class="headertop_line"><i></i></li>
+								<li><a href="#" target="_blank">账户安全</a></li>
+								<li><a href="#" target="_blank">我的实名认证</a></li>
+								<li class="headertop_line"><i></i></li>
+								<li><a href="#" target="_blank">我收藏的商品</a></li>
+								<li><a href="#" target="_blank">我关注的品牌</a></li>
+								<li class="headertop_line"><i></i></li>
+								<li><a href="#" target="_blank">售后管理</a></li>
+							</ul>
+						</li>
+						<li class="header_drop">
+							<a href="#" target="_blank">客户服务</a>
+							<ul class="header_khfw">
+								<li class="header_topi1"><a href="#" target="_blank">联系客服</a></li>
+								<li class="header_topi2"><a href="#" target="_blank">帮助中心</a></li>
+							</ul>
+						</li>
+						<li class="header_drop">
+							<a href="#" target="_blank">充值中心</a>
+							<ul class="header_czzx">
+								<li class="header_topi1"><a href="#" target="_blank">话费充值</a></li>
+								<li class="header_topi2"><a href="#" target="_blank">游戏充值</a></li>
+							</ul>
+						</li>
+						<li><a href="#" target="_blank">消费者告知书</a></li>
+						<li class="header_drop">
+							<a href="#" target="_blank" class="headertop_last">更多</a>
+							<ul class="header_topm">
+								<li class="header_topi1"><a href="#" target="_blank">收藏本站</a></li>
+								<li class="headertop_line"><i></i></li>
+								<li class="header_topi1"><a href="#" target="_blank">新浪微博</a></li>
+								<li class="header_topi1"><a href="#" target="_blank">易信公众号</a></li>
+								<li class="header_topi1"><a href="#" target="_blank">微信公众号</a></li>
+								<li class="headertop_line"><i></i></li>
+								<li class="header_topi1"><a href="#" target="_blank">招商合作</a></li>
+								<li class="headertop_line"><i></i></li>
+								<li class="header_topi1"><a href="#" target="_blank">考拉招聘</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="header_mid">
+				<a href="index.html" target="_blank" class="header_logo"></a>
+				<div class="header_searchbox">
+					<div class="header_topsearch">
+						<div class="header_search_wrap">
+							<input type="text" id="search" class="header_search_input" />
+						</div>
+						<input type="button" class="header_search_btn" />
+						<span class="header_search_icon"></span>
+					</div>
+					<ul class="header_search_nav">
+						<li><a href="#" class="red">618欢乐送提前购</a><span class="sep">|</span></li>
+						<li><a href="#" class="red">61顽童节</a><span class="sep">|</span></li>
+						<li><a href="#">游戏充值</a><span class="sep">|</span></li>
+						<li><a href="#">奶粉</a><span class="sep">|</span></li>
+						<li><a href="#">马油</a><span class="sep">|</span></li>
+						<li><a href="#">MK</a><span class="sep">|</span></li>
+						<li><a href="#">麦片</a></li>
+					</ul>
+				</div>
+				<a href="#" class="header_chat">
+					<span class="header_chat_icon"></span>
+					<span class="header_chat_text">购物车</span>
+				</a>
+			</div>
+			<div class="header_nav">
+				<div class="header_nav_main" id="header_allbox">
+					<div class="header_nav_all">
+						<div class="header_nav_level">
+							<div class="header_navall_icon">
+								<i></i>
+								<i></i>
+								<i></i>
+							</div>
+							<span>所有分类</span>
+						</div>
+						<ul class="header_list_ul">
+							<li>
+								<a href="#">
+									<img src="img/headerList_icon1.png" alt="" class="headerlist_icon" />
+									<span class="headerlist_span">母婴儿童</span>
+									<i class="headerlist_arr">＞</i>
+									<span class="headerlist_line"></span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/headerList_icon2.png" alt="" class="headerlist_icon" />
+									<span class="headerlist_span">美容彩妆</span>
+									<i class="headerlist_arr">＞</i>
+									<span class="headerlist_line"></span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/headerList_icon3.png" alt="" class="headerlist_icon" />
+									<span class="headerlist_span">服饰鞋包</span>
+									<i class="headerlist_arr">＞</i>
+									<span class="headerlist_line"></span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/headerList_icon4.png" alt="" class="headerlist_icon" />
+									<span class="headerlist_span">家居个护</span>
+									<i class="headerlist_arr">＞</i>
+									<span class="headerlist_line"></span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/headerList_icon5.png" alt="" class="headerlist_icon" />
+									<span class="headerlist_span">营养保健</span>
+									<i class="headerlist_arr">＞</i>
+									<span class="headerlist_line"></span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/headerList_icon6.png" alt="" class="headerlist_icon" />
+									<span class="headerlist_span">海外直邮</span>
+									<i class="headerlist_arr">＞</i>
+									<span class="headerlist_line"></span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/headerList_icon7.png" alt="" class="headerlist_icon" />
+									<span class="headerlist_span">数码家电</span>
+									<i class="headerlist_arr">＞</i>
+									<span class="headerlist_line"></span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/headerList_icon8.png" alt="" class="headerlist_icon" />
+									<span class="headerlist_span">环球美食</span>
+									<i class="headerlist_arr">＞</i>
+									<span class="headerlist_line"></span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/headerList_icon9.png" alt="" class="headerlist_icon" />
+									<span class="headerlist_span">运动户外</span>
+									<i class="headerlist_arr">＞</i>
+									<span class="headerlist_line"></span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/headerList_icon0.png" alt="" class="headerlist_icon" />
+									<span class="headerlist_span">水果生鲜</span>
+									<i class="headerlist_arr">＞</i>
+									<span class="headerlist_line"></span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<ul class="header_navul clearfix">
+						<li><a href="index.html" target="_blank">首页</a></li>
+						<li><a href="#" target="_blank">今日限时购</a></li>
+						<li><a href="new.html" target="_blank">每日上新</a></li>
+						<li><a href="country.html" target="_blank">国家馆</a></li>
+						<li><a href="world.html" target="_blank">全球旗舰</a></li>
+					</ul>
+					<div id="header_important"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

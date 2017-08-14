@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>网易账号中心</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/register.css" />
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="js/register.js"></script>
+	</head>
+	<body>
+		<div class="header">
+			<div class="header_main">
+				<a href="index.html">
+					<div class="header_logo"></div>
+				</a>
+				<div class="header_login">
+					已有账号？去<a href="login.html">登录</a>
+				</div>
+			</div>
+		</div>
+		<div class="form">
+			<div class="form_register">注册账号</div>
+			<div class="form_content" id="register_form">
+				<form action="">
+					<div class="form_line">
+						<label class="form_label" for="username">账号：</label>
+						<input type="text" class="form_input" id="username" placeholder="6-18位字母数字组合" autocomplete="off" />
+						<div class="form_input_empty">
+							<div class="form_input_empty_icon" id="username_empty"></div>
+						</div>
+						<select id="useremail" class="form_select">
+							<option>@163.com</option>
+							<option>@126.com</option>
+							<option>@yeah.net</option>
+						</select>
+						<div class="form_tips">
+							<div class="form_tips_main">
+								<i id="username_icon" class="form_tips_icon"></i>
+								<span id="username_info" class="form_error_red"></span>
+							</div>
+						</div>
+					</div>
+					<div class="form_line">
+						<label class="form_label" for="password">密码：</label>
+						<input type="password" class="form_input" id="password" placeholder="6-16位密码，区分大小写" autocomplete="off" />
+						<div class="form_input_empty">
+							<div class="form_input_empty_icon" id="password_empty"></div>
+						</div>
+						<div class="form_tips">
+							<div class="form_tips_main">
+								<i id="password_icon" class="form_tips_icon"></i>
+								<span id="password_info" class="form_error_red"></span>
+							</div>
+						</div>
+					</div>
+					<div class="form_line">
+						<label class="form_label" for="checkpassword">确认密码：</label>
+						<input type="password" class="form_input" id="checkpassword" placeholder="再次输入密码" autocomplete="off" />
+						<div class="form_input_empty">
+							<div class="form_input_empty_icon" id="checkpassword_empty"></div>
+						</div>
+						<div class="form_tips">
+							<div class="form_tips_main">
+								<i id="checkpassword_icon" class="form_tips_icon"></i>
+								<span id="checkpassword_info" class="form_error_red">密码不一致</span>
+							</div>
+						</div>
+					</div>
+					<div class="form_line">
+						<label class="form_label" for="verify_input">验证码：</label>
+						<input type="text" class="form_input" id="verify_input" placeholder="请输入验证码" maxlength="4" autocomplete="off" />
+						<div id="verify_num">1234</div>
+						<div class="form_tips">
+							<div class="form_tips_main">
+								<i id="verify_icon" class="form_tips_icon tips_icon_error"></i>
+								<span id="verify_info" class="form_error_red"></span>
+							</div>
+						</div>
+					</div>
+					<div class="form_line">
+						<label class="form_label" for="phone">手机号：</label>
+						<input type="text" class="form_input" id="phone" placeholder="11位手机号" maxlength="11" autocomplete="off" />
+						<div class="form_input_empty">
+							<div class="form_input_empty_icon" id="phone_empty"></div>
+						</div>
+						<div class="form_tips">
+							<div class="form_tips_main">
+								<i id="phone_icon" class="form_tips_icon"></i>
+								<span id="phone_info" class=""></span>
+							</div>
+						</div>
+					</div>
+					<span class="form_line form_note">
+						<label class="form_label"></label>
+						<span class="form_note_span">切换到国际手机</span>
+					</span>
+					<span class="form_line form_note">
+						<label class="form_label"></label>忘记密码时，可通过手机快速找回密码
+					</span>
+					<div class="form_line">
+						<label class="form_label" for="checkphone">短信验证码：</label>
+						<input type="text" class="form_input" id="checkphone" placeholder="输入短信验证码" maxlength="6" autocomplete="off" />
+						<div class="form_input_empty">
+							<div class="form_input_empty_icon" id="checkphone_empty"></div>
+						</div>
+						<div class="form_tips">
+							<input type="button" id="obtain" class="form_obtainphone obtainphone_false" value="获取验证码" />
+							<div class="form_tips_main">
+								<i id="checkphone_icon" class="form_tips_icon"></i>
+								<span id="checkphone_info" class="">请输入正确的验证码</span>
+							</div>
+						</div>
+					</div>
+					<div class="form_line">
+						<label class="form_label"></label>
+						<input type="button" id="form_sub" class="form_submit" value="注册" />
+					</div>
+					<div class="form_line">
+						<label class="form_label"></label>
+						<span class="form_checktips">
+							<span class="form_checktips_cbox" id="form_cbox"></span>
+							<span class="tips_a ml10">用户勾选即代表同意</span>
+							<a href="#" class="tips_a" target="_blank">《服务条款》</a>
+							和
+							<a href="#" class="tips_a" target="_blank">《网络游戏用户隐私保护和个人信息利用政策》</a>
+						</span>
+						
+					</div>
+				</form>
+			</div>
+			<div class="regsuccess clearfix">
+				<div class="regsuccess_title">
+					<div class="regsuccess_img"></div>
+					<div class="regsuccess_text">注册成功！</div>
+				</div>
+				<div class="reg_safe clearfix">
+					<span>目前账号安全等级：</span>
+					<i class="reg_star star_full"></i>
+					<i class="reg_star star_full"></i>
+					<i class="reg_star star_full"></i>
+					<i class="reg_star"></i>
+					<i class="reg_star"></i>
+					<span class="yellow">中</span>
+				</div>
+				<div class="return_index">
+					<a href="index.html" target="_blank">返回网易考拉海购</a>
+				</div>
+			</div>
+			<div class="banner">
+				<a href="#" target="_blank">
+					<img src="img/register_banner.png" alt="" id="banner_img"/>
+				</a>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="footer_main">
+				<p class="footer_p">
+					<a href="#">About NetEase</a>
+					-
+					<a href="#">公司简介</a>
+					-
+					<a href="#">联系方式</a>
+					-
+					<a href="#">OAuth2.0认证</a>
+					-
+					<a href="#">招聘信息</a>
+					-
+					<a href="#">客户服务</a>
+					-
+					<a href="#">相关法律</a>
+					-
+					<a href="#">网络营销</a>
+				</p>
+				<p class="footer_p">网易公司版权所有 ©1997-2017</p>
+			</div>
+		</div>
+	</body>
+</html>

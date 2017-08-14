@@ -1,0 +1,1365 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/fresh.css"/>
+		<link rel="stylesheet" type="text/css" href="css/head.css"/>
+		<link rel="stylesheet" type="text/css" href="css/footer.css"/>
+		<script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery_utils.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/head.js"></script>
+		<script src="js/fresh.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="headerbox"></div>
+		<div class="header">
+			<div class="header_top">
+				<div class="header_main">
+					<div class="header_cookie">
+						<span>您好，</span>
+						<span id="header_username">username@163.com</span>
+						<span class="sep">|</span>
+						<a id="header_logout">退出</a>
+					</div>
+					<div class="header_default">
+						<span>考拉欢迎你！</span>
+						<a href="login.html" class="header_login" target="_blank">登录</a>
+						<span class="sep">|</span>
+						<a href="register.html" target="_blank">免费注册</a>
+					</div>
+					<div class="header_phone">
+						<a href="#" target="_blank" class="header_icon1">手机考拉海购</a>
+					</div>
+					<div class="header_weather">
+						<span id="header_weathercity"></span>&nbsp;&nbsp;
+						<span id="header_weatherstate"></span>&nbsp;&nbsp;
+						<span id="header_weathertemp"></span>
+						<ul class="header_weather_more">
+							<li><span id="header_weather_day"></span></li>
+							<li id="header60"><span id="header_weather_message"></span></li>
+						</ul>
+					</div>
+					<ul class="header_right">
+						<li><a href="#" target="_blank" class="header_icon2">每日签到</a></li>
+						<li><a href="#" target="_blank">我的订单</a></li>
+						<li class="header_drop">
+							<a href="#" target="_blank">个人中心</a>
+							<ul class="header_grzx">
+								<li><a href="#" target="_blank">我的优惠券</a></li>
+								<li><a href="#" target="_blank">我的考拉豆</a></li>
+								<li class="headertop_line"><i></i></li>
+								<li><a href="#" target="_blank">账户安全</a></li>
+								<li><a href="#" target="_blank">我的实名认证</a></li>
+								<li class="headertop_line"><i></i></li>
+								<li><a href="#" target="_blank">我收藏的商品</a></li>
+								<li><a href="#" target="_blank">我关注的品牌</a></li>
+								<li class="headertop_line"><i></i></li>
+								<li><a href="#" target="_blank">售后管理</a></li>
+							</ul>
+						</li>
+						<li class="header_drop">
+							<a href="#" target="_blank">客户服务</a>
+							<ul class="header_khfw">
+								<li class="header_topi1"><a href="kfserver.html" target="_blank">联系客服</a></li>
+								<li class="header_topi2"><a href="#" target="_blank">帮助中心</a></li>
+							</ul>
+						</li>
+						<li class="header_drop">
+							<a href="#" target="_blank">充值中心</a>
+							<ul class="header_czzx">
+								<li class="header_topi1"><a href="#" target="_blank">话费充值</a></li>
+								<li class="header_topi2"><a href="#" target="_blank">游戏充值</a></li>
+							</ul>
+						</li>
+						<li><a href="#" target="_blank">消费者告知书</a></li>
+						<li class="header_drop">
+							<a href="#" target="_blank" class="headertop_last">更多</a>
+							<ul class="header_topm">
+								<li class="header_topi1"><a href="#" target="_blank">收藏本站</a></li>
+								<li class="headertop_line"><i></i></li>
+								<li class="header_topi1"><a href="#" target="_blank">新浪微博</a></li>
+								<li class="header_topi1"><a href="#" target="_blank">易信公众号</a></li>
+								<li class="header_topi1"><a href="#" target="_blank">微信公众号</a></li>
+								<li class="headertop_line"><i></i></li>
+								<li class="header_topi1"><a href="#" target="_blank">招商合作</a></li>
+								<li class="headertop_line"><i></i></li>
+								<li class="header_topi1"><a href="#" target="_blank">考拉招聘</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="header_mid">
+				<a href="index.html" target="_blank" class="header_logo"></a>
+				<div class="header_searchbox">
+					<div class="header_topsearch">
+						<div class="header_search_wrap">
+							<input type="text" id="search" class="header_search_input" />
+						</div>
+						<input type="button" class="header_search_btn" />
+						<span class="header_search_icon"></span>
+					</div>
+					<ul class="header_search_nav">
+						<li><a href="#" class="red">618欢乐送提前购</a><span class="sep">|</span></li>
+						<li><a href="#" class="red">61顽童节</a><span class="sep">|</span></li>
+						<li><a href="#">游戏充值</a><span class="sep">|</span></li>
+						<li><a href="#">奶粉</a><span class="sep">|</span></li>
+						<li><a href="#">马油</a><span class="sep">|</span></li>
+						<li><a href="#">MK</a><span class="sep">|</span></li>
+						<li><a href="#">麦片</a></li>
+					</ul>
+				</div>
+				<a href="#" class="header_chat">
+					<span class="header_chat_icon"></span>
+					<span class="header_chat_text">购物车</span>
+				</a>
+			</div>
+			<div class="header_nav">
+				<div class="header_nav_main" id="header_allbox">
+					<div class="header_nav_all">
+						<div class="header_nav_level">
+							<div class="header_navall_icon">
+								<i></i>
+								<i></i>
+								<i></i>
+							</div>
+							<span>所有分类</span>
+						</div>
+						<ul class="header_list_ul">
+							<li>
+								<a href="#">
+									<img src="img/headerList_icon1.png" alt="" class="headerlist_icon" />
+									<span class="headerlist_span">母婴儿童</span>
+									<i class="headerlist_arr">＞</i>
+									<span class="headerlist_line"></span>
+								</a>
+							</li>
+							<li>
+								<a href="mz.html" target="_blank">
+									<img src="img/headerList_icon2.png" alt="" class="headerlist_icon" />
+									<span class="headerlist_span">美容彩妆</span>
+									<i class="headerlist_arr">＞</i>
+									<span class="headerlist_line"></span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/headerList_icon3.png" alt="" class="headerlist_icon" />
+									<span class="headerlist_span">服饰鞋包</span>
+									<i class="headerlist_arr">＞</i>
+									<span class="headerlist_line"></span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/headerList_icon4.png" alt="" class="headerlist_icon" />
+									<span class="headerlist_span">家居个护</span>
+									<i class="headerlist_arr">＞</i>
+									<span class="headerlist_line"></span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/headerList_icon5.png" alt="" class="headerlist_icon" />
+									<span class="headerlist_span">营养保健</span>
+									<i class="headerlist_arr">＞</i>
+									<span class="headerlist_line"></span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/headerList_icon6.png" alt="" class="headerlist_icon" />
+									<span class="headerlist_span">海外直邮</span>
+									<i class="headerlist_arr">＞</i>
+									<span class="headerlist_line"></span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/headerList_icon7.png" alt="" class="headerlist_icon" />
+									<span class="headerlist_span">数码家电</span>
+									<i class="headerlist_arr">＞</i>
+									<span class="headerlist_line"></span>
+								</a>
+							</li>
+							<li>
+								<a href="Gourmet.html" target="_blank">
+									<img src="img/headerList_icon8.png" alt="" class="headerlist_icon" />
+									<span class="headerlist_span">环球美食</span>
+									<i class="headerlist_arr">＞</i>
+									<span class="headerlist_line"></span>
+								</a>
+							</li>
+							<li>
+								<a href="sport.html" target="_blank">
+									<img src="img/headerList_icon9.png" alt="" class="headerlist_icon" />
+									<span class="headerlist_span">运动户外</span>
+									<i class="headerlist_arr">＞</i>
+									<span class="headerlist_line"></span>
+								</a>
+							</li>
+							<li>
+								<a href="fresh.html" target="_blank">
+									<img src="img/headerList_icon0.png" alt="" class="headerlist_icon" />
+									<span class="headerlist_span">水果生鲜</span>
+									<i class="headerlist_arr">＞</i>
+									<span class="headerlist_line"></span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<ul class="header_navul clearfix">
+						<li><a href="index.html" target="_blank">首页</a></li>
+						<li><a href="#" target="_blank">今日限时购</a></li>
+						<li><a href="new.html" target="_blank">每日上新</a></li>
+						<li><a href="country.html" target="_blank">国家馆</a></li>
+						<li><a href="world.html" target="_blank">全球旗舰</a></li>
+					</ul>
+					<div id="header_important"></div>
+				</div>
+			</div>
+		</div>
+		<!--看板轮播图------------------------------------------------------------------------->
+		<div class="carouselfigure">
+			<div class="carouselfigure_mask">
+				<ul>
+					<li><a href=""><img src="img/fresh_banner0.jpg"/></a></li>
+					<li><a href=""><img src="img/fresh_banner1.jpg"/></a></li>
+					<li><a href=""><img src="img/fresh_banner2.jpg"/></a></li>
+				</ul>
+			</div>
+			<ol class="carouselfigure_point">
+				<li class="carouselfigure_point_on"></li>
+				<li></li>
+				<li></li>
+			</ol>
+			<div class="prev">
+			</div>
+			<div class="next">
+			</div>
+		</div>
+		<!--商品分类------------------------------------------------------------------------------------->
+		<div class="fresh_classify banxin">
+			<a href=""></a>
+			<a href=""></a>
+			<a href=""></a>
+			<a href=""></a>
+		</div>
+		<!--秒杀价商品----------------------------------------------------------------------------------->
+		<div class="fresh_second_kill clearfix banxin">
+			<h1 id="fresh_second_kill_title">限时秒杀</h1>
+			<div class="fresh_second_kill_goods">
+				<a href="">
+					<img src="img/fresh_second_kill1.jpg"/>
+					<p>
+						<span id="">
+							限量5件
+						</span>
+						<i></i>
+					</p>
+					<span class="sell_out" id="">
+						
+					</span>
+				</a>
+				<p>
+					<a class="fresh_second_kill_goods_title" href="">【果郡王】海南妃子笑荔枝3斤</a>
+					<span id="">
+						秒杀价： <i>￥<em>9.9</em></i> ￥<del>69</del>
+					</span>
+					<a class="fresh_second_kill_goods_link sell_out_message" href="">原价商品仍有优惠哦~</a>
+				</p>
+			</div>
+			<div class="fresh_second_kill_goods">
+				<a href="">
+					<img src="img/fresh_second_kill2.jpg"/>
+					<p>
+						<span id="">
+							限量20件
+						</span>
+						<i></i>
+					</p>
+					<span class="" id="">
+						
+					</span>
+				</a>
+				<p>
+					<a class="fresh_second_kill_goods_title" href="">【百年栗园】北京 土鸡单冻鸡胸肉360克 5份装 顺丰包邮</a>
+					<span id="">
+						秒杀价：  <i>￥<em>99</em></i> ￥<del>149</del>
+					</span>
+					<a class="fresh_second_kill_goods_link" href="">马上去抢</a>
+				</p>
+			</div>
+			<div class="fresh_second_kill_goods">
+				<a href="">
+					<img src="img/fresh_second_kill3.jpg"/>
+					<p>
+						<span id="">
+							限量50件
+						</span>
+						<i></i>
+					</p>
+					<span class="" id="">
+						
+					</span>
+				</a>
+				<p>
+					<a class="fresh_second_kill_goods_title" href="">星农联合麻辣小龙虾 4-6钱/只 总重2000g</a>
+					<span id="">
+						秒杀价：  <i>￥<em>76</em></i> ￥<del>298</del>
+					</span>
+					<a class="fresh_second_kill_goods_link" href="">马上去抢</a>
+				</p>
+			</div>
+			<div class="fresh_second_kill_goods fresh_second_kill_goods_last">
+				<a href="">
+					<img src="img/fresh_second_kill4.jpg"/>
+					<p>
+						<span id="">
+							限量50件
+						</span>
+						<i></i>
+					</p>
+					<span class="" id="">
+						
+					</span>
+				</a>
+				<p>
+					<a class="fresh_second_kill_goods_title" href="">当顿庄园 澳洲进口 原切原味西冷牛排3人份套餐200克*3片装 顺丰直达</a>
+					<span id="">
+						秒杀价：  <i>￥<em>86</em></i> ￥<del>218</del>
+					</span>
+					<a class="fresh_second_kill_goods_link" href="">马上去抢</a>
+				</p>
+			</div>
+		</div>
+		<!--一楼商品列表--------------------------------------------------------------------------------------->
+		<div class="fresh_con_list banxin">
+			<div id="fresh_con_title1" class="fresh_con_title">
+				
+			</div>
+			<div class="fresh_con_wrap">
+				<div class="fresh_con_goods">
+					<a href="">
+						<img src="img/21da4eb7-2b1d-48f6-8833-f236c1744b11.jpg"/>
+						<p class="fresh_con_union_tags"></p><p class="fresh_country_icon">
+							<img src="img/kaola_country1.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="fresh_con_goods_title" href="">
+							生鲜盒子 河南南阳黄金瓜 新鲜水果 农家水果 5斤装 包邮
+						</a>
+						<a class="fresh_con_goods_con" href="">
+							黄金瓜口感酥软，香甜多汁
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>19.9</i> <del>¥59</del>
+						</span>
+						<a class="fresh_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="fresh_con_goods">
+					<a href="">
+						<img src="img/eadbcef7-9126-4254-b2d1-7a4f7c38a977.jpg"/>
+						<p class="fresh_con_union_tags"></p><p class="fresh_country_icon">
+							<img src="img/kaola_country1.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="fresh_con_goods_title" href="">
+							广东茂名白糖罂荔枝 5斤装 新鲜热带水果
+						</a>
+						<a class="fresh_con_goods_con" href="">
+							皮薄爽口 口感清香
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>128</i> <del>¥258</del>
+						</span>
+						<a class="fresh_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="fresh_con_goods">
+					<a href="">
+						<img src="img/1362f570-8db8-41a6-9ba8-bb55f50d0a8f.jpg"/>
+						<p class="fresh_con_union_tags"></p><p class="fresh_country_icon">
+							<img src="img/kaola_country1.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="fresh_con_goods_title" href="">
+							【本来生活】产地直供-福建软丝杨梅（冷链包装） 约4斤/箱
+						</a>
+						<a class="fresh_con_goods_con" href="">
+							产地直供 肉质细软
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>168</i> <del>¥368</del>
+						</span>
+						<a class="fresh_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="fresh_con_goods">
+					<a href="">
+						<img src="img/8ebf58c5-9354-4cec-a95a-9094aedf094b.png"/>
+						<p class="fresh_con_union_tags"></p><p class="fresh_country_icon">
+							<img src="img/kaola_country1.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="fresh_con_goods_title" href="">
+							北极光森鲜站 现摘现发 阎良甜瓜5斤装 新鲜香瓜农家水果梨瓜水果
+						</a>
+						<a class="fresh_con_goods_con" href="">
+							汁多甘甜 果香味浓
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>33.8</i> <del>¥62</del>
+						</span>
+						<a class="fresh_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="fresh_con_goods">
+					<a href="">
+						<img src="img/5587f768-6b2e-422d-8c40-a939aa013d4a.jpg"/>
+						<p class="fresh_con_union_tags"></p><p class="fresh_country_icon">
+							<img src="img/kaola_country1.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="fresh_con_goods_title" href="">
+							广东茂名高州妃子笑荔枝 5斤装 新鲜热带鲜果
+						</a>
+						<a class="fresh_con_goods_con" href="">
+							颗颗饱满，鲜红挂绿
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>108</i> <del>¥228</del>
+						</span>
+						<a class="fresh_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="fresh_con_goods">
+					<a href="">
+						<img src="img/c2aceb96-5f35-4c33-904d-c5cb53b0caa2.jpg"/>
+						<p class="fresh_con_union_tags"></p><p class="fresh_country_icon">
+							<img src="img/kaola_country1.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="fresh_con_goods_title" href="">
+							鲜百年 海南妃子笑荔枝3斤装 顺丰包邮
+						</a>
+						<a class="fresh_con_goods_con" href="">
+							鲜 甜 香 柔 回味无穷
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>69</i> <del>¥89</del>
+						</span>
+						<a class="fresh_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="fresh_con_goods">
+					<a href="">
+						<img src="img/bb55c8d8-73ad-4a7b-98e7-69865d9899ba.jpg"/>
+						<p class="fresh_con_union_tags"></p><p class="fresh_country_icon">
+							<img src="img/kaola_country1.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="fresh_con_goods_title" href="">
+							鲜百年 海南妃子笑荔枝5斤装 顺丰包邮
+						</a>
+						<a class="fresh_con_goods_con" href="">
+							鲜 甜 香 柔 回味无穷
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>89</i> <del>¥129</del>
+						</span>
+						<a class="fresh_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="fresh_con_goods">
+					<a href="">
+						<img src="img/1dd5b349-285b-4b11-9508-f1c7c1e5d4b7.jpg"/>
+						<p class="fresh_con_union_tags"></p><p class="fresh_country_icon">
+							<img src="img/kaola_country1.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="fresh_con_goods_title" href="">
+							【世果汇】源自唐朝贡园八百年古树荔枝3斤 白糖罂精美礼盒装
+						</a>
+						<a class="fresh_con_goods_con" href="">
+							源自唐朝贡园八百年古树
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>198</i> <del>¥299</del>
+						</span>
+						<a class="fresh_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		
+		<!--二楼商品列表--------------------------------------------------------------------------------------->
+		<div class="fresh_con_list banxin">
+			<div id="fresh_con_title2" class="fresh_con_title">
+				
+			</div>
+			<div class="fresh_con_wrap">
+				<div class="fresh_con_goods">
+					<a href="">
+						<img src="img/1e983219-0fed-4c7e-b44e-2a64efc1feb4.png"/>
+						<p class="fresh_con_union_tags"></p><p class="fresh_country_icon">
+							<img src="img/kaola_country1.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="fresh_con_goods_title" href="">
+							【当顿庄园】澳洲进口 原切牛霖肉 牛肉块 圆霖块500克2份装 顺丰直达
+						</a>
+						<a class="fresh_con_goods_con" href="">
+							原切牛霖肉 粒粒鲜香
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>148</i> <del>¥298</del>
+						</span>
+						<a class="fresh_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="fresh_con_goods">
+					<a href="">
+						<img src="img/2e677886-5e30-40ff-b8a6-f746ecc34cb7.png"/>
+						<p class="fresh_con_union_tags"></p><p class="fresh_country_icon">
+							<img src="img/kaola_country1.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="fresh_con_goods_title" href="">
+							【当顿庄园】澳洲进口带骨西冷牛排原切非腌制新鲜220克5份装顺丰直达
+						</a>
+						<a class="fresh_con_goods_con" href="">
+							带骨西冷牛排220克5份装
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>269</i> <del>¥568</del>
+						</span>
+						<a class="fresh_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="fresh_con_goods">
+					<a href="">
+						<img src="img/fbe31b7d-127e-4f95-b040-e72c9941db11.png"/>
+						<p class="fresh_con_union_tags"></p><p class="fresh_country_icon">
+							<img src="img/kaola_country1.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="fresh_con_goods_title" href="">
+							【当顿庄园】澳洲进口 原切小米龙牛排 菲力牛排260克5份装 顺丰直达
+						</a>
+						<a class="fresh_con_goods_con" href="">
+							原切小米龙牛排 鲜嫩多汁
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>228</i> <del>¥398</del>
+						</span>
+						<a class="fresh_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="fresh_con_goods">
+					<a href="">
+						<img src="img/cf59ef85-3a76-415c-a999-318c7116337b.png"/>
+						<p class="fresh_con_union_tags"></p><p class="fresh_country_icon">
+							<img src="img/kaola_country1.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="fresh_con_goods_title" href="">
+							【当顿庄园】澳洲进口 谷饲育肥 原切牡蛎肉牛排285克5份装 顺丰直达
+						</a>
+						<a class="fresh_con_goods_con" href="">
+							谷饲牡蛎肉牛排 细嫩多汁
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>228</i> <del>¥456</del>
+						</span>
+						<a class="fresh_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="fresh_con_goods">
+					<a href="">
+						<img src="img/a37a1fbd-2f8c-40dc-abdb-719c535b7b2e.jpg"/>
+						<p class="fresh_con_union_tags"></p><p class="fresh_country_icon">
+							<img src="img/kaola_country1.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="fresh_con_goods_title" href="">
+							【满199赠锅】礼盒版原切牛排6份套餐西冷2份沙朗2份 上脑2份
+						</a>
+						<a class="fresh_con_goods_con" href="">
+							西冷2份 沙朗2份 上脑2份
+						</a>
+						<b>包邮</b>
+						<span id="">
+							¥<i>199</i> <del>¥388</del>
+						</span>
+						<a class="fresh_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="fresh_con_goods">
+					<a href="">
+						<img src="img/749dfc0e-4487-442e-8dee-2d0133fab0b1.jpg"/>
+						<p class="fresh_con_union_tags"></p><p class="fresh_country_icon">
+							<img src="img/kaola_country1.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="fresh_con_goods_title" href="">
+							【本来生活】休眠清远鸡 168A（ 900克 /袋）
+						</a>
+						<a class="fresh_con_goods_con" href="">
+							瞬冻休眠鸡 活鸡口感
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>118</i> <del>¥199</del>
+						</span>
+						<a class="fresh_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="fresh_con_goods">
+					<a href="">
+						<img src="img/3f1089ec-7ae0-40fe-a318-f4cbe1b83bbc.jpg"/>
+						<p class="fresh_con_union_tags"></p><p class="fresh_country_icon">
+							<img src="img/kaola_country8.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="fresh_con_goods_title" href="">
+							微澳 澳洲西冷牛排 进口和牛M7级200克纯种和牛雪花新鲜原切
+						</a>
+						<a class="fresh_con_goods_con" href="">
+							乳香四溢 原汁原味
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>188</i> <del>¥229</del>
+						</span>
+						<a class="fresh_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="fresh_con_goods">
+					<a href="">
+						<img src="img/5c00ebc5-c3c0-4db2-8fc0-b941112a5a30.jpg"/>
+						<p class="fresh_con_union_tags"></p><p class="fresh_country_icon">
+							<img src="img/kaola_country8.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="fresh_con_goods_title" href="">
+							微澳 澳洲眼肉牛排 进口和牛M9级200克纯种和牛雪花新鲜原切
+						</a>
+						<a class="fresh_con_goods_con" href="">
+							澳洲进口 名贵和牛
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>235</i> <del>¥319</del>
+						</span>
+						<a class="fresh_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		
+		<!--三楼商品列表--------------------------------------------------------------------------------------->
+		<div class="fresh_con_list banxin">
+			<div id="fresh_con_title3" class="fresh_con_title">
+				
+			</div>
+			<div class="fresh_con_wrap">
+				<div class="fresh_con_goods">
+					<a href="">
+						<img src="img/d1960840-9109-4bd5-96b8-a979c25388f3.png"/>
+						<p class="fresh_con_union_tags"></p><p class="fresh_country_icon">
+							<img src="img/kaola_country1.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="fresh_con_goods_title" href="">
+							享当豪 进口虎虾550克 野生海捕 新鲜船冻 鲜嫩Q弹 营养味美
+						</a>
+						<a class="fresh_con_goods_con" href="">
+							进口虎虾550克 鲜嫩Q弹
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>258</i> <del>¥469</del>
+						</span>
+						<a class="fresh_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="fresh_con_goods">
+					<a href="">
+						<img src="img/5453b61b-95f2-473f-bcbf-f72e31dad424.png"/>
+						<p class="fresh_con_union_tags"></p><p class="fresh_country_icon">
+							<img src="img/kaola_country1.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="fresh_con_goods_title" href="">
+							享当豪 船冻大墨鱼1000克~1200克/只 野生海捕 肉质饱满紧实
+						</a>
+						<a class="fresh_con_goods_con" href="">
+							船冻大墨鱼肉质饱满紧实
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>158</i> <del>¥298</del>
+						</span>
+						<a class="fresh_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="fresh_con_goods">
+					<a href="">
+						<img src="img/bf8dbdac-c42c-4965-9a61-2cb45b63c295.png"/>
+						<p class="fresh_con_union_tags"></p><p class="fresh_country_icon">
+							<img src="img/kaola_country1.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="fresh_con_goods_title" href="">
+							享当豪 进口鲳鱼700克~800克/条 野生海捕 新鲜船冻 刺少肉嫩
+						</a>
+						<a class="fresh_con_goods_con" href="">
+							进口鲳鱼肉嫩少刺
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>129</i> <del>¥198</del>
+						</span>
+						<a class="fresh_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="fresh_con_goods">
+					<a href="">
+						<img src="img/f0390f31-fbb6-4d8e-8ff6-b7e1ec34dee2.png"/>
+						<p class="fresh_con_union_tags"></p><p class="fresh_country_icon">
+							<img src="img/kaola_country1.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="fresh_con_goods_title" href="">
+							享当豪 进口白虾500克 野生海捕 新鲜船冻 口感鲜嫩Q弹
+						</a>
+						<a class="fresh_con_goods_con" href="">
+							白虾500克 野生海捕
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>199</i> <del>¥388</del>
+						</span>
+						<a class="fresh_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="fresh_con_goods">
+					<a href="">
+						<img src="img/1556da88-eaf7-4959-bb70-53c5c674a427.jpg"/>
+						<p class="fresh_con_union_tags"></p><p class="fresh_country_icon">
+							<img src="img/kaola_country1.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="fresh_con_goods_title" href="">
+							【本来生活】冷冻翡翠生虾仁 200克/袋 32-42尾
+						</a>
+						<a class="fresh_con_goods_con" href="">
+							现捕尝鲜 美味健康
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>39</i> <del>¥99</del>
+						</span>
+						<a class="fresh_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="fresh_con_goods">
+					<a href="">
+						<img src="img/5e77c824-49dc-4d4c-a40f-966defd0617b.png"/>
+						<p class="fresh_con_union_tags">满2件<br />减6</p><p class="fresh_country_icon">
+							<img src="img/kaola_country1.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="fresh_con_goods_title" href="">
+							【买2件减6元】舟鲜生 舟山海鱼鱼圆200克 2包装
+						</a>
+						<a class="fresh_con_goods_con" href="">
+							舟山海鱼鱼丸
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>18.9</i> <del>¥26</del>
+						</span>
+						<a class="fresh_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="fresh_con_goods">
+					<a href="">
+						<img src="img/65f91276-283d-483b-947c-b61868209d52.jpg"/>
+						<p class="fresh_con_union_tags">满3件<br />减30</p><p class="fresh_country_icon">
+							<img src="img/kaola_country5.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="fresh_con_goods_title" href="">
+							ICEFRESH 冰岛大西洋真鳕鱼柳 250g 野生
+						</a>
+						<a class="fresh_con_goods_con" href="">
+							肉质鲜嫩、顺滑，口感紧实
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>59</i> <del>¥128</del>
+						</span>
+						<a class="fresh_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="fresh_con_goods">
+					<a href="">
+						<img src="img/f4f885c1-1ba2-4d36-bad0-9e1a5bac5f46.jpg"/>
+						<p class="fresh_con_union_tags">满3件<br />减30</p><p class="fresh_country_icon">
+							<img src="img/kaola_country5.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="fresh_con_goods_title" href="">
+							ICEFRESH 斯里兰卡黑金虎虾（小） 250克 野生 约10头
+						</a>
+						<a class="fresh_con_goods_con" href="">
+							黑金之气，甘甜而厚足
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>62</i> <del>¥128</del>
+						</span>
+						<a class="fresh_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		
+		<!--四楼商品列表--------------------------------------------------------------------------------------->
+		<div class="fresh_con_list banxin">
+			<div id="fresh_con_title4" class="fresh_con_title">
+				
+			</div>
+			<div class="fresh_con_wrap">
+				<div class="fresh_con_goods">
+					<a href="">
+						<img src="img/09c303fd-d2c9-4aef-a030-afcd2d5ea46a.png"/>
+						<p class="fresh_con_union_tags">满4件<br />减6</p><p class="fresh_country_icon">
+							<img src="img/kaola_country3.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="fresh_con_goods_title" href="">
+							洋洋生鲜 milkana 百吉福 棒棒奶酪 原味 120克
+						</a>
+						<a class="fresh_con_goods_con" href="">
+							好吃好玩好营养
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>17.8</i> <del>¥20.8</del>
+						</span>
+						<a class="fresh_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="fresh_con_goods">
+					<a href="">
+						<img src="img/c8c08a87-7419-4171-a5b0-cc95283b241c.jpg"/>
+						<p class="fresh_con_union_tags"></p><p class="fresh_country_icon">
+							<img src="img/kaola_country4.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="fresh_con_goods_title" href="">
+							Killinchy Gold 柯林高德 枫糖核桃味冰淇淋 1升/盒
+						</a>
+						<a class="fresh_con_goods_con" href="">
+							新西兰知名品牌
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>98</i> <del>¥148</del>
+						</span>
+						<a class="fresh_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="fresh_con_goods">
+					<a href="">
+						<img src="img/6d12da96-8aed-4030-9b87-00930b2977de.jpg"/>
+						<p class="fresh_con_union_tags">满2件<br />减5</p><p class="fresh_country_icon">
+							<img src="img/kaola_country6.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="fresh_con_goods_title" href="">
+							洋洋生鲜 Meiji/明治 保加利亚式酸奶低脂肪 清甜原味100克 16杯装
+						</a>
+						<a class="fresh_con_goods_con" href="">
+							低脂更健康
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>96</i> <del>¥128</del>
+						</span>
+						<a class="fresh_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="fresh_con_goods">
+					<a href="">
+						<img src="img/3f2e6c07-bb4f-4e92-be25-6a1b73ca1a4c.jpg"/>
+						<p class="fresh_con_union_tags">满99<br />减15</p><p class="fresh_country_icon">
+							<img src="img/kaola_country2.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="fresh_con_goods_title" href="">
+							SIERRA 雪榴山 马来飞饼 原味 240克 5袋（仅发江浙沪）
+						</a>
+						<a class="fresh_con_goods_con" href="">
+							典藏美味 唇齿留香
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>72</i> <del>¥89</del>
+						</span>
+						<a class="fresh_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="fresh_con_goods">
+					<a href="">
+						<img src="img/b8c01f74-2128-4f17-9e83-63cacfb58eab.jpg"/>
+						<p class="fresh_con_union_tags">满99<br />减15</p><p class="fresh_country_icon">
+							<img src="img/kaola_country7.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="fresh_con_goods_title" href="">
+							一康 原味芝士年糕 500克/袋（仅发江浙沪）
+						</a>
+						<a class="fresh_con_goods_con" href="">
+							精心选材 自然健康
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>26.8</i> <del>¥35.8</del>
+						</span>
+						<a class="fresh_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="fresh_con_goods">
+					<a href="">
+						<img src="img/1f241361-5867-42c9-8c84-2a96ee1f8389.png"/>
+						<p class="fresh_con_union_tags"></p><p class="fresh_country_icon">
+							<img src="img/kaola_country1.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="fresh_con_goods_title" href="">
+							北极光森鲜站 Duria猫山王榴莲千层蛋糕 6寸 850克
+						</a>
+						<a class="fresh_con_goods_con" href="">
+							榴莲蛋糕中的千层贵族
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>238</i> <del>¥480</del>
+						</span>
+						<a class="fresh_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="fresh_con_goods">
+					<a href="">
+						<img src="img/0c883412-c2c5-4f32-87a0-022f6628eb11.jpg"/>
+						<p class="fresh_con_union_tags"></p><p class="fresh_country_icon">
+							<img src="img/kaola_country8.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="fresh_con_goods_title" href="">
+							Golden North 金诺斯 香草味冰淇淋
+						</a>
+						<a class="fresh_con_goods_con" href="">
+							金诺斯 冰淇淋王国
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>109</i> <del>¥159</del>
+						</span>
+						<a class="fresh_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+				<div class="fresh_con_goods">
+					<a href="">
+						<img src="img/76c93854-16dd-4d3b-ad95-4cffbeb02e86.jpg"/>
+						<p class="fresh_con_union_tags"></p><p class="fresh_country_icon">
+							<img src="img/kaola_country8.png"/>
+						</p>
+						<span id="">
+							新品上线，赶快来试试吧！
+						</span>
+					</a>
+					<p>
+						<a class="fresh_con_goods_title" href="">
+							Golden North 金诺斯 蜂蜜味冰淇淋
+						</a>
+						<a class="fresh_con_goods_con" href="">
+							金诺斯 冰淇淋王国
+						</a>
+						<b></b>
+						<span id="">
+							¥<i>109</i> <del>¥159</del>
+						</span>
+						<a class="fresh_con_goods_link" href="">
+							立即购买
+						</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<!--右边栏------------------------------------------------------------------------------------------>
+		<div class="right_side_bar">
+			<a class="shopping_cart" href="shoppingCart.html"><p><i class="shopping_cart_icon"></i><span>购物车</span></p></a>
+			<a href="#fresh_second_kill_title">限时秒杀</a>
+			<a href="#fresh_con_title1">1F 新鲜水果</a>
+			<a href="#fresh_con_title2">2F 肉禽蛋品</a>
+			<a href="#fresh_con_title3">3F 水产海鲜</a>
+			<a href="#fresh_con_title4">4F 冷冻食品</a>
+			<a class="totop" href="#top">
+				<p class="totop_icon"></p>
+				<span id="">
+					TOP
+				</span>
+			</a>
+		</div>
+		<!--脚部------------------------------------------------------------------------------>
+		<div class="footer">
+			<div class="foot_top clearfix">
+				<div class="foot_content">
+					<div class="btmlist">
+						<ul class="clearfix">
+							<li>
+								<i class="w_icon icon23"></i>
+								<strong class="tit">100%正品</strong>
+								<p class="desc">正品保障 假一赔十</p>
+							</li>
+							<li>
+								<i class="w_icon icon24"></i>
+								<strong class="tit">低价保障</strong>
+								<p class="desc">缩减中间环节 确保低价</p>
+							</li>
+							<li>
+								<i class="w_icon icon25"></i>
+								<strong class="tit">30天无忧退货</strong>
+								<p class="desc">国内退货 售后无忧</p>
+							</li>
+							<li class="last">
+								<i class="w_icon icon26"></i>
+								<strong class="tit">满88包邮</strong>
+								<p class="desc">部分特殊商品除外</p>
+							</li>
+						</ul>
+					</div>
+					<div class="guidelist clearfix">
+						<ul class="clearfix">
+							<li class="first">
+								<a href="###" class="logokaola"></a>
+								<div class="focuson">
+									<span class="label">关注我们</span>
+									<a href="###" class="itm">
+										<i class="w_icon icon27"></i>
+										<span class="m_notice">
+											<img src="img/foot1.jpg" alt="" />
+											<span class="arrow">
+												<span class="arr"></span>
+												<span class="arr1"></span>
+											</span>
+										</span>
+									</a>
+									<a href="###" class="itm">
+										<i class="w_icon icon28"></i>
+										<span class="m_notice">
+											<img src="img/foot2.jpg" alt="" />
+											<span class="arrow">
+												<span class="arr"></span>
+												<span class="arr1"></span>
+											</span>
+										</span>
+									</a>
+									<a href="###" class="itm">
+										<i class="w_icon icon29"></i>
+										<span class="m_notice">
+											<img src="img/foot3.jpg" alt="" />
+											<span class="arrow">
+												<span class="arr"></span>
+												<span class="arr1"></span>
+											</span>
+										</span>
+									</a>
+								</div>
+							</li>
+							<li>
+								<dl>
+									<dt>考拉保障</dt>
+									<dd><a href="###">假一赔十</a></dd>
+									<dd><a href="###">廉正监督</a></dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt>新手指南</dt>
+									<dd><a href="###">购物流程</a></dd>
+									<dd><a href="###">支付方式</a></dd>
+									<dd><a href="###">通关税费</a></dd>
+									<dd><a href="###">常见问题</a></dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt>售后服务</dt>
+									<dd><a href="###">退货政策</a></dd>
+									<dd><a href="###">退货流程</a></dd>
+									<dd><a href="###">退款说明</a></dd>
+									<dd><a href="###">联系客服</a></dd>
+									<dd><a href="###">先行赔付</a></dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt>物流配送</dt>
+									<dd><a href="###">配送方式</a></dd>
+									<dd><a href="###">配送服务</a></dd>
+									<dd><a href="###">运费标准</a></dd>
+									<dd><a href="###">物流跟踪</a></dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt>关于我们</dt>
+									<dd><a href="###">联系我们</a></dd>
+									<dd><a href="###">招商合作</a></dd>
+									<dd><a href="###">销售联盟</a></dd>
+									<dd><a href="###">CEO邮箱</a></dd>
+								</dl>
+							</li>
+							<li class="last">
+								<img src="img/foot4.jpg" alt="" />
+								<span>扫描下载手机版</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="foot_bottom">
+				<a href="###">About NetEase</a>-
+				<a href="###">公司简介</a>-
+				<a href="###">联系方法</a>-
+				<a href="###">友情链接</a>-
+				<a href="###">招聘信息</a>-
+				<a href="###">客户服务</a>-
+				<a href="###">隐私政策</a>-
+				<a href="###">网络营销</a>-
+				<a href="###">网站地图</a>-
+				<a href="###">网易考拉海购</a>
+				<br />
+				<span class="license">网络文化经营许可证：浙网文[2016]0155-055号</span>
+				<span class="license">增值电信业务经营许可证：浙B2-20090185-3</span>
+				<span class="license">出版物经营许可证：新出发浙杭经零字第00136号</span>
+				<span class="license"><a href="###">自营经营者信息</a></span>
+				<br />
+				<a href="###"><img src="img/foot5.png" alt="" /></a>
+				<a href="###"><span style="margin-left: 5px;">浙公网安备 33010002000066号</span></a>
+				<span class="license">网易公司版权所有©1997-2017</span>
+				<div class="tac">
+					<span class="kxwz"><a href="###"><img src="img/foot6.png" alt="" /></a></span>
+					<a href="###" class="shield"><img src="img/foot7.gif" alt="" /></a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

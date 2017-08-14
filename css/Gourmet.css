@@ -1,0 +1,519 @@
+/*
+ * 页面通用样式
+ */
+
+.banxin{
+	width: 1000px;
+	margin: 0 auto;
+}
+body{
+	background-color: #f6f6f6;
+}
+.clearfix:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+/*
+ * 看板轮播图
+ */
+
+.carouselfigure {
+	width: auto;
+	height: 400px;
+	margin: 0px auto;
+	overflow: hidden;
+	position: relative;
+}
+
+.carouselfigure .carouselfigure_mask {
+	width: auto;
+	height: 400px;
+	overflow: hidden;
+	position: relative;
+}
+
+.carouselfigure .carouselfigure_mask ul {
+	position: absolute;
+	left: 0;
+	width: 1350px;
+	height: 400px;
+}
+
+.carouselfigure .carouselfigure_mask ul li {
+	width: auto;
+	height: 400px;
+	float: left;
+}
+
+.carouselfigure .carouselfigure_mask ul li img {
+	width: auto;
+	height: 400px;
+}
+
+.carouselfigure_point {
+	position: absolute;
+	width: 58px;
+	height: 28px;
+	background: url(../img/kaola_fade_btn2.png);
+	left: 50%;
+	bottom: 18px;
+	padding-top: 9px;
+	padding-left: 14px;
+	box-sizing: border-box;
+}
+
+.carouselfigure_point li {
+	cursor: pointer;
+	width: 10px;
+	height: 10px;
+	background: url(../img/kaola_icon1.png) no-repeat -8px -2px;
+	border-radius: 50%;
+	float: left;
+	margin-right: 10px;
+}
+
+.carouselfigure_point .carouselfigure_point_on {
+	background: url(../img/kaola_icon1.png) no-repeat -28px -2px;
+}
+
+.carouselfigure .next,
+.carouselfigure .prev {
+	width: 34px;
+	height: 68px;
+	position: absolute;
+	left: 127px;
+	top: 166px;
+	cursor: pointer;
+	background: url(../img/kaola_icon1.png) no-repeat;
+	background-position-x: -626px;
+	background-position-y: -68px;
+	opacity: 0;
+	filter: alpha(opacity:0);
+}
+.carouselfigure .next {
+	background-position-x: -670px;
+	background-position-y: -68px;
+	left: auto;
+	right: 127px;
+}
+
+.carouselfigure .prev:hover{
+	background-position-y: -153px;
+}
+.carouselfigure .next:hover{
+	background-position-y: -154px;
+}
+
+/*
+ * 商品分类
+ */
+
+.Gourmet_classify{
+	height: 300px;
+	background: url(../img/Gourmet_classify.jpg) no-repeat;
+	background-position-x: 0;
+	padding-top: 20px;
+	box-sizing: border-box;
+}
+.Gourmet_classify a{
+	display: block;
+	float: left;
+	width: 249px;
+	height: 126px;
+	margin-left: 1px;
+	margin-top: 1px;
+}
+
+/*
+ * 精选栏目
+ */
+
+.Gourmet_life h1{
+	height: 67px;
+	background: url(../img/Gourmet_life_title.jpg) no-repeat;
+	background-position-x: 0;
+}
+.Gourmet_life .Gourmet_life_con{
+	height: 333px;
+	background: url(../img/Gourmet_life_con.jpg);
+}
+.Gourmet_life .Gourmet_life_con a{
+	display: block;
+	margin-right: 8px;
+	float: left;
+	width: 328px;
+	height: 328px;
+}
+.Gourmet_life .Gourmet_life_con .Gourmet_life_con_last{
+	margin-right: 0;
+}
+
+/*
+ * 全部品牌
+ */
+.Gourmet_brand h1{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	height: 68px;
+	background: url(../img/Gourmet_recommend_title.jpg);
+	background-position-x: 0;
+}
+.Gourmet_brand{
+	overflow: hidden;
+}
+.Gourmet_brand ul{
+	background-color: #FFFFFF;
+	margin-bottom: 10px;
+}
+.Gourmet_brand ul li{
+	width: 250px;
+	float: left;
+	height: 44px;
+	position: relative;
+	cursor: pointer;
+}
+.Gourmet_brand ul li i{
+	position: absolute;
+	display: block;
+	height:20px;
+	color: #dfd5d3;
+	top: 12px;
+	left: 0;
+}
+.Gourmet_brand ul li span{
+	font-size: 14px;
+	display: block;
+	width: 76px;
+	height: 42px;
+	color: #666666;
+	text-align: center;
+	line-height: 42px;
+	margin: 0 auto;
+	border-bottom: 2px solid #FFFFFF;
+}
+.Gourmet_brand ul .Gourmet_brand_type_active span{
+	color: #cb0101;
+	font-weight: 900;
+	border-bottom: 2px solid #cb0101;
+}
+.Gourmet_brand .Gourmet_brand_wrap{
+	width: 1100px;
+}
+.Gourmet_brand .Gourmet_brand_wrap a{
+	display: block;
+	float: left;
+	width: 244px;
+	height: 348px;
+	margin-right: 8px;
+	margin-bottom: 8px;
+	position: relative;
+	overflow: hidden;
+}
+.Gourmet_brand .Gourmet_brand_wrap a p{
+	width: 244px;
+	height: 152px;
+	position: absolute;
+	background-color: #FFFFFF;
+	bottom: -48px;
+	left: 0;
+}
+.Gourmet_brand .Gourmet_brand_wrap a p img{
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+    border: 1px solid #ddd;
+    position: absolute;
+    left: 82px;
+    top: -40px;
+}
+.Gourmet_brand .Gourmet_brand_wrap a p .Gourmet_brand_name{
+	display: block;
+	width: 244px;
+	height: 20px;
+	margin-top: 50px;
+	line-height: 20px;
+	color: #333333;
+	text-align: center;
+	font-size: 14px;
+	font-weight: bold;
+}
+.Gourmet_brand .Gourmet_brand_wrap a p .Gourmet_brand_introduce{
+	display: block;
+	line-height: 20px;
+	text-align: center;
+	height: 20px;
+	width: 244px;
+	color: #E31436;
+	font-size: 13px;
+}
+.Gourmet_brand .Gourmet_brand_wrap a p b{
+	display: block;
+	background: #d22147;
+	color: #FFFFFF;
+    margin: 16px auto 0;
+    width: 124px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    border-radius: 14px;
+}
+
+.con_show{
+	/*display: none;*/
+}
+.con_hide{
+	display: none;
+}
+
+/*
+ * 商品列表
+ */
+
+.Gourmet_con h1{
+	color: #333333;
+	line-height: 60px;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 1000px;
+	height: 60px;
+	font-size: 28px;
+	font-weight: 500;
+}
+.Gourmet_con{
+}
+.Gourmet_con .Gourmet_con_wrap{
+	width: 1100px;
+}
+.Gourmet_con .Gourmet_con_wrap a{
+	display: block;
+	float: left;
+	margin: 0 22.5px 22.5px 22.5px;
+}
+.Gourmet_con .Gourmet_con_wrap .Gourmet_con_goods{
+	float: left;
+	margin-right: 8px;
+	margin-bottom: 8px;
+	width: 244px;
+	height: 366px;
+	background-color: #FFFFFF;
+}
+.Gourmet_con .Gourmet_con_wrap .Gourmet_con_goods a{
+	display: block;
+	position: relative;
+	font-size: 12px;
+	text-decoration: none;
+	color: #333333;
+	margin: 0;
+	height: 244px;
+	width: 244px;
+}
+.Gourmet_con .Gourmet_con_wrap .Gourmet_con_goods a .sell_out{
+	position: absolute;
+	top: 76px;
+	left: 76px;
+	display: block;
+	width: 92px;
+	height: 92px;
+	background: url(../img/kaola_icon1.png) no-repeat -463px -382px;
+}
+.Gourmet_con .Gourmet_con_wrap .Gourmet_con_goods a img{
+	width: 244px;
+}
+.Gourmet_con .Gourmet_con_wrap .Gourmet_con_goods a:hover img{
+	opacity: .85;
+	filter: alpha(opacity:85);
+}
+.Gourmet_con .Gourmet_con_wrap .Gourmet_con_goods a .Gourmet_con_union_tags{
+	padding: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	color: #FFFFFF;
+	width: 48px;
+	text-align: center;
+	padding-top: 7px;
+	line-height: 16px;
+	box-sizing: border-box;
+	height: 48px;
+	background-color: #FDA438;
+}
+.Gourmet_con .Gourmet_con_wrap .Gourmet_con_goods a .sport_country_icon{
+	position: absolute;
+	padding: 0;
+	left: 10px;
+	top: 10px;
+	width: 28px;
+	height: 28px;
+}
+.Gourmet_con .Gourmet_con_wrap .Gourmet_con_goods a .sport_country_icon img{
+	width: 28px;
+	height: 28px;	
+}
+.Gourmet_con .Gourmet_con_wrap .Gourmet_con_goods a span{
+	height: 32px;
+	width: 244px;
+	background-color:#666666;
+	text-align: center;
+	line-height: 32px;
+	color: #ffffff;
+	display: none;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.Gourmet_con .Gourmet_con_wrap .Gourmet_con_goods a:hover span{
+	display: block;
+}
+.Gourmet_con .Gourmet_con_wrap .Gourmet_con_goods p{
+	width: 244px;
+	height: 122px;
+	overflow: hidden;
+	box-sizing: border-box;
+	padding-left: 16px;
+	padding-right: 16px;
+	padding-top: 10px;
+	position: relative;
+}
+.Gourmet_con .Gourmet_con_wrap .Gourmet_con_goods p .Gourmet_con_goods_title{
+	display: block;
+	width: 218px;
+	height: 18px;
+	font-weight: 600;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.Gourmet_con .Gourmet_con_wrap .Gourmet_con_goods p .Gourmet_con_goods_title:hover{
+	text-decoration: underline;
+}
+.Gourmet_con .Gourmet_con_wrap .Gourmet_con_goods p .Gourmet_con_goods_title strong{
+	font-weight: bold;
+    color: #E31436;
+}
+.Gourmet_con .Gourmet_con_wrap .Gourmet_con_goods p .Gourmet_con_goods_con{
+	display: block;
+	width: 218px;
+	height: 18px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	margin-bottom: 8px;
+}
+.Gourmet_con .Gourmet_con_wrap .Gourmet_con_goods p .Gourmet_con_goods_con:hover{
+	text-decoration: underline;
+}
+.Gourmet_con .Gourmet_con_wrap .Gourmet_con_goods p b{
+	display: block;
+	height: 20px;
+	font-size: 12px;
+	color: #e3146e;
+	line-height: 20px;
+	text-align: center;
+	border: 1px dotted #e3146e;
+	margin-bottom: 8px;
+	margin-right: 5px;
+	float: left;
+}
+.Gourmet_con .Gourmet_con_wrap .Gourmet_con_goods p span{
+	position: absolute;
+	display: block;
+	font-size: 12px;
+	color: #e3146e;
+	left: 16px;
+	bottom: 20px;
+}
+.Gourmet_con .Gourmet_con_wrap .Gourmet_con_goods p span i{
+	font-size: 18px;
+	font-weight: 900;
+}
+.Gourmet_con .Gourmet_con_wrap .Gourmet_con_goods p span del{
+	margin-left: 5px;
+	color: #999999;
+}
+.Gourmet_con .Gourmet_con_wrap .Gourmet_con_goods p .Gourmet_con_goods_link{
+	width: auto;
+	padding: 0 6px;
+	height: 26px;
+	line-height: 26px;
+	text-align: center;
+	background-color: #d22147;
+	color: #FFFFFF;
+	display: block;
+	position: absolute;
+	right: 18px;
+	bottom: 16px;
+}
+
+/*
+ * 右边栏
+ */
+
+.right_side_bar{
+	position: fixed;
+	right: 50px;
+	bottom: 50px;
+    background-color: #a20000;
+    display: none;
+}
+.right_side_bar a{
+	text-decoration: none;
+	width: 100px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	font-size: 13px;
+	display: block;
+	color: #FFFFFF;
+	margin-bottom: 1px;
+	background-color: #cb0101;
+}
+.right_side_bar a:hover{
+	background-color: #A20000;
+}
+.right_side_bar .totop{
+	height: 40px;
+	position: relative;
+	line-height: 55px;
+	margin-bottom: 0;
+}
+.right_side_bar .totop .totop_icon{
+	font-size: 25px;
+	font-weight: bolder;
+	font-family: simsun;
+	position: absolute;
+	line-height: normal;
+	width: 20px;
+	height: 12px;
+	background:url(../img/totop.png) no-repeat;
+	top: 5px;
+	left: 40px;
+}
+.right_side_bar .totop:hover .totop_icon{
+	background:url(../img/totop_after.png) no-repeat;
+}
+.right_side_bar .shopping_cart{
+	height: 40px;
+    background-color: #a20000;;
+    margin-bottom: 0;
+    line-height: 40px;
+}
+.right_side_bar .shopping_cart p span{
+	width: 40px;
+	margin-top: 0;
+	display: block;
+	float: left;
+}
+.right_side_bar .shopping_cart p .shopping_cart_icon{
+	margin-left: 16px;
+	margin-right: 4px;
+	width: 20px;
+	height: 20px;
+	margin-top: 10px;
+	float: left;
+	display: block;
+	line-height: normal;
+	background: url(../img/kaola_icon1.png) no-repeat -956px -68px;
+}
